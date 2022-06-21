@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geometrical optics | Xiaodong Wang</title>
+    <link>https://xiaodongwo.github.io/tag/geometrical-optics/</link>
+      <atom:link href="https://xiaodongwo.github.io/tag/geometrical-optics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Geometrical optics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 16 Sep 2021 21:20:19 +0800</lastBuildDate>
+    <image>
+      <url>https://xiaodongwo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Geometrical optics</title>
+      <link>https://xiaodongwo.github.io/tag/geometrical-optics/</link>
+    </image>
+    
+    <item>
+      <title>10倍双目望远镜设计</title>
+      <link>https://xiaodongwo.github.io/projects/5th_project/</link>
+      <pubDate>Thu, 16 Sep 2021 21:20:19 +0800</pubDate>
+      <guid>https://xiaodongwo.github.io/projects/5th_project/</guid>
+      <description>&lt;br/&gt;
+&gt;&gt; 项目概述：
+&lt;br/&gt;根据所给功能参数设计八倍双目望远镜，分析光学系统像差，设计精密仪器结构。
+&lt;br/&gt;
+&lt;br/&gt;
+&gt;&gt; 项目内容：
+&lt;br/&gt;1.运用几何光学所学知识，计算光学系统关键性参数，运用像差理论知识和计算机进行参数优化以减小像差，确定最终光学系统；
+&lt;br/&gt;2.运用精密机械设计和误差公差理论所学知识，选定各个零件，确定光机结构，如用压圈压紧各个透镜等（尺寸，公差误差等）；
+&lt;br/&gt;3.运用CAD和SOLIDWORKS设计零件结构及最终装配图，进行答辩。
+&lt;br/&gt;&lt;br/&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-双目望远镜部分零件设计及最终结构图&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/bicular_hu534aec16f87b6688786ed0acb542a730_1400213_a1d545056e89a3449b778c38b78cc9c4.png 400w,
+               /media/bicular_hu534aec16f87b6688786ed0acb542a730_1400213_00ed6d0faa5db757f44aea34d6f1f0e4.png 760w,
+               /media/bicular_hu534aec16f87b6688786ed0acb542a730_1400213_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/bicular_hu534aec16f87b6688786ed0acb542a730_1400213_a1d545056e89a3449b778c38b78cc9c4.png&#34;
+               width=&#34;640&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;br/&gt; &lt;strong&gt;Figure 1&lt;/strong&gt;. 双目望远镜部分零件设计及最终结构图
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-2-丝杆结构装配图&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/CAD_hu0063cb27bef41183307c1a010e676363_90403_2ec888cfde8d0328ca50bfefefc62b78.png 400w,
+               /media/CAD_hu0063cb27bef41183307c1a010e676363_90403_8f530f50d7fe0768d19f80e25754c987.png 760w,
+               /media/CAD_hu0063cb27bef41183307c1a010e676363_90403_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/CAD_hu0063cb27bef41183307c1a010e676363_90403_2ec888cfde8d0328ca50bfefefc62b78.png&#34;
+               width=&#34;760&#34;
+               height=&#34;393&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;br/&gt; &lt;strong&gt;Figure 2&lt;/strong&gt;. 丝杆结构装配图
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

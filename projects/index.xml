@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Xiaodong Wang</title>
+    <link>https://xiaodongwo.github.io/projects/</link>
+      <atom:link href="https://xiaodongwo.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 16 Sep 2021 21:20:19 +0800</lastBuildDate>
+    <image>
+      <url>https://xiaodongwo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>https://xiaodongwo.github.io/projects/</link>
+    </image>
+    
+    <item>
+      <title>Intelligent Algorithms for Wavefront Shaping</title>
+      <link>https://xiaodongwo.github.io/projects/1st_project/</link>
+      <pubDate>Wed, 08 Sep 2021 19:44:03 +0800</pubDate>
+      <guid>https://xiaodongwo.github.io/projects/1st_project/</guid>
+      <description>&lt;p&gt;Focusing or imaging through scattering media is still a big challenge because inhomogeneous media scatter incoming photons for focusing and outgoing photons for observation. Various approachs have been proposed to tackle the scattering issues. One can measure the transmission matrix of the scattering media in advance in order to compensate the scattering effect, yet this method relies heavily on the characterization of scattering media, making it time-comsuming and not general enough. Wavefront shaping is an optimization-algorithm based method that exploit no prior information of scattering media. Most off-the-self optimization algorithms focus on genetic algorithm and its variants. Genetic algorithm is one of the most powerful evolutionary algorithms that shares great popularity among industries. Here in this project we intent to compare the optimization performance in wavefront shaping using different evolutionary algorithms.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-wavefront-shaping-by-genetic-algorithm&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/GA_1D_WFS_hufb84d618928132b13f235d1b5f732ff7_672866_5d0a98fd17bdd76708e6e4fb4309ff2c.png 400w,
+               /media/GA_1D_WFS_hufb84d618928132b13f235d1b5f732ff7_672866_c1e90efce0cb48c647b06ef8bed8af26.png 760w,
+               /media/GA_1D_WFS_hufb84d618928132b13f235d1b5f732ff7_672866_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/GA_1D_WFS_hufb84d618928132b13f235d1b5f732ff7_672866_5d0a98fd17bdd76708e6e4fb4309ff2c.png&#34;
+               width=&#34;760&#34;
+               height=&#34;583&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 1&lt;/strong&gt;. Wavefront Shaping by Genetic Algorithm
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-2-numerical-demonstration-of-four-intelligent-algorithms-for-wavefront-shaping-a-genetic-algorithm-b-particle-swarm-optimization-c-beetle-antennae-search-and-d-sparrow-search-algorithm&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/FourIntelliAlgo_1D_IncidentLight_hu40db2b46e4329bc94c881778c7d15a35_853270_e3fa8cd16f7aebcf44dabb61f6508e20.png 400w,
+               /media/FourIntelliAlgo_1D_IncidentLight_hu40db2b46e4329bc94c881778c7d15a35_853270_db19acdfbec91a1ba47a5d796cecfcbd.png 760w,
+               /media/FourIntelliAlgo_1D_IncidentLight_hu40db2b46e4329bc94c881778c7d15a35_853270_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/FourIntelliAlgo_1D_IncidentLight_hu40db2b46e4329bc94c881778c7d15a35_853270_e3fa8cd16f7aebcf44dabb61f6508e20.png&#34;
+               width=&#34;760&#34;
+               height=&#34;563&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 2&lt;/strong&gt;. Numerical Demonstration of Four Intelligent Algorithms for Wavefront Shaping. (a) Genetic Algorithm, (b) Particle Swarm Optimization, (c) Beetle Antennae Search, and (d) Sparrow Search Algorithm.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-3-experimental-demonstration-of-genetic-algorithm-and-beetle-antennae-search-algorithm-for-wavefront-shaping-a-experimental-setup-b-focusing-by-genetic-algorithm-c-focusing-by-beetle-antennae-search-algorithm&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/ExperimentalFocusing_GA&amp;amp;BAS_hu679ae2a35b403cfd24481aa53436ef13_1693018_5fa1ead1ae3bae8fc3b8f5ac5f9680d0.png 400w,
+               /media/ExperimentalFocusing_GA&amp;amp;BAS_hu679ae2a35b403cfd24481aa53436ef13_1693018_13c5f10d09497b343c823acbc30d946a.png 760w,
+               /media/ExperimentalFocusing_GA&amp;amp;BAS_hu679ae2a35b403cfd24481aa53436ef13_1693018_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/ExperimentalFocusing_GA&amp;amp;BAS_hu679ae2a35b403cfd24481aa53436ef13_1693018_5fa1ead1ae3bae8fc3b8f5ac5f9680d0.png&#34;
+               width=&#34;745&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 3&lt;/strong&gt;. Experimental Demonstration of Genetic Algorithm and Beetle Antennae Search Algorithm for Wavefront Shaping. (a) Experimental setup, (b) Focusing by genetic algorithm, (c) Focusing by beetle antennae search algorithm.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Note that in this project we aim to develop fluorescence imaging through scattering media using polymer dots (a type of fluorescence probe developed by group of &lt;a href=&#34;http://wulab.bme.sustech.edu.cn/team-member/changfeng-wu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Changfeng Wu&lt;/em&gt;&lt;/a&gt;). And that&amp;rsquo;s why the numerical demonstration exploys a reflective optical scheme simulating fluorescence backpropagating through scatterig media, while in experimental section we are adopting a simpler transmissive optical scheme for algorithm validation.  For more details of the simulation demonstration, please refer to literatures&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Dayan Li, Sujit Kumar Sahoo, Huy Quoc Lam, Dong Wang, and Cuong Dang , &amp;ldquo;Non-invasive optical focusing inside strongly scattering media with linear fluorescence&amp;rdquo;, Appl. Phys. Lett. 116, 241104 (2020) &lt;a href=&#34;https://doi.org/10.1063/5.0004071&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1063/5.0004071&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fluorescence-based Speckle Deconvolution Imaging</title>
+      <link>https://xiaodongwo.github.io/projects/2st_project/</link>
+      <pubDate>Wed, 08 Sep 2021 19:46:02 +0800</pubDate>
+      <guid>https://xiaodongwo.github.io/projects/2st_project/</guid>
+      <description>&lt;p&gt;Fast imaging through turbid media is of great interest in fields of astronomical observation and biological imaging. State-of-the-art approachs relies heavily on iterative optimization algorithms or prior charactirazation of scattering media,  hence impeding real time imaging scenerio. Memory-effect based methods expoit the inherent correlation of incident tilted light and thus can realize instant imaging thorugh scattering media.  Speckle deconvolution imaging through scattering media was proposed in 2016 for the first time and gains popularities these years in this field. To the best of our knowledge, this method has rarely been applied to fluorescence imaging in a reflective optical scheme. Here in this project we are showing some reconstruction results using polymer dots as fluorescence signal.&lt;/p&gt;
+&lt;p&gt;The schematic for deconvolution imaging through scattering media is presented in Figure 1. The bottom-right corner represents the detailed derivation for PSF scaling, which can be found useful in subsequent extended-DOF and non-invasive imaging.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-schematic-of-fluorescence-imaging-through-scattering-media-by-speckle-deconvolution&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/Schematic_hu7f4492a5ab451571dd432d474de2ddcf_1360457_eb894e75e72ef3f2047fc1ba5f1b5d29.png 400w,
+               /media/Schematic_hu7f4492a5ab451571dd432d474de2ddcf_1360457_00b8bb10a062c8c92b1fc113dd4436b4.png 760w,
+               /media/Schematic_hu7f4492a5ab451571dd432d474de2ddcf_1360457_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/Schematic_hu7f4492a5ab451571dd432d474de2ddcf_1360457_eb894e75e72ef3f2047fc1ba5f1b5d29.png&#34;
+               width=&#34;760&#34;
+               height=&#34;498&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 1&lt;/strong&gt;. Schematic of fluorescence imaging through scattering media by speckle deconvolution
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;A home-built epi-fluorescence setup (a) for fast imaging through scattering media is presented, along with a custom-designed optical filter wheel (b) and polymer-dots based fluorescence sample (c). The system is operated and controled by LabVIEW software.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-2-experimental-setup-of-fluorescence-imaging-through-scattering-media-by-speckle-deconvolution&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/Setup_hua3c117c02683fa3d7486d254f14b8669_3867803_86797fab9445caf02e7a826aed1a2ab2.png 400w,
+               /media/Setup_hua3c117c02683fa3d7486d254f14b8669_3867803_1a6b37fa0fbb4b1e198d49885fc54fb6.png 760w,
+               /media/Setup_hua3c117c02683fa3d7486d254f14b8669_3867803_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/Setup_hua3c117c02683fa3d7486d254f14b8669_3867803_86797fab9445caf02e7a826aed1a2ab2.png&#34;
+               width=&#34;760&#34;
+               height=&#34;471&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 2&lt;/strong&gt;. Experimental setup of fluorescence imaging through scattering media by speckle deconvolution
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Speckle deconvolution imaging is demonstrated through the epi-fluorescence scattering imaging system. By measuring the PSF speckle (a) and object speckle (b) sequentially at the same depth, Wiener deconvolution manages to reconstruct the hidden object behind the thin scattering media with high fidiety, as shown in (d) the reconstruction and (c) the unknown object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-3-fluorescence-imaging-through-scattering-media-by-speckle-deconvolution&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/SpeckleDeconvo_hu140a324cefe85c824e331ed889362125_604885_40101a4aedfc6c7948962f239458dc99.png 400w,
+               /media/SpeckleDeconvo_hu140a324cefe85c824e331ed889362125_604885_e21ae19275bdb1539143bd7a60fec86e.png 760w,
+               /media/SpeckleDeconvo_hu140a324cefe85c824e331ed889362125_604885_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/SpeckleDeconvo_hu140a324cefe85c824e331ed889362125_604885_40101a4aedfc6c7948962f239458dc99.png&#34;
+               width=&#34;760&#34;
+               height=&#34;596&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 3&lt;/strong&gt;. Fluorescence imaging through scattering media by speckle deconvolution
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Subsequent experimental demonstration for extended DOF and noninvasive imaging through scattering media will be updated later&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Polymer-dots for STORM Imaging</title>
+      <link>https://xiaodongwo.github.io/projects/3rd_project/</link>
+      <pubDate>Wed, 08 Sep 2021 20:16:38 +0800</pubDate>
+      <guid>https://xiaodongwo.github.io/projects/3rd_project/</guid>
+      <description>&lt;p&gt;Fluorescent microscopy techniques are widely used in biological studies. However, the spatial resolution of fluorescent microscopy is restricted by the optical diffraction limit. In the past two decades, super-resolution imaging techniques with different principles have been invented to visualize biomolecules at nanometer scales. The development of nearly all these techniques is closely related to the advances in fluorescent probes.  In particular, the intrinsic properties of fluorescent probes constrain the optimal imaging performance of super-resolution nanoscopy techniques. Here for the first time we developed a novel class of semiconducting polymer dots that can operate in an optically switchable mode.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-polymer-dots-for-super-resolution-nanoscopy&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/FXF-pdots_hude0b9952417caf4ded36ad24773b5e32_1614581_ddf6c159e2f86f45d1ee85c5b8e06e77.png 400w,
+               /media/FXF-pdots_hude0b9952417caf4ded36ad24773b5e32_1614581_b6760b0d5c9abb6b2ada2ac3eb069714.png 760w,
+               /media/FXF-pdots_hude0b9952417caf4ded36ad24773b5e32_1614581_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/FXF-pdots_hude0b9952417caf4ded36ad24773b5e32_1614581_ddf6c159e2f86f45d1ee85c5b8e06e77.png&#34;
+               width=&#34;595&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 1&lt;/strong&gt;. Polymer Dots for Super-resolution Nanoscopy
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-2-polymer-dots-for-super-resolution-nanoscopy&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/FXF-STORM_hu488180b06055f5e8692f03a8f3d014ee_1554972_1962643e8046af67207a7b86db3f9732.png 400w,
+               /media/FXF-STORM_hu488180b06055f5e8692f03a8f3d014ee_1554972_853e1dd9dda7ad3205bc887aa278c38d.png 760w,
+               /media/FXF-STORM_hu488180b06055f5e8692f03a8f3d014ee_1554972_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/FXF-STORM_hu488180b06055f5e8692f03a8f3d014ee_1554972_1962643e8046af67207a7b86db3f9732.png&#34;
+               width=&#34;760&#34;
+               height=&#34;634&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 2&lt;/strong&gt;. Polymer Dots for Super-resolution Nanoscopy
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Image-guided Wavefront Shaping</title>
+      <link>https://xiaodongwo.github.io/projects/4th_project/</link>
+      <pubDate>Wed, 08 Sep 2021 20:24:22 +0800</pubDate>
+      <guid>https://xiaodongwo.github.io/projects/4th_project/</guid>
+      <description>&lt;p&gt;Wavefront shaping unlocked many exciting applications related to imaging through scattering media. However, they usually require to have some feedback from the object to observe, typically a guide-star generated by physically labeling the sample or by using ultrasound (that reduced the resolution). Other computer-based approaches recently developed relied on the memory-effect, which drastically limits the field of view, or requires a coherent illumination. In the present paper, T. Yeminy and O. Katz present a very simple approach that allows the reconstruction of an object hidden behind a scattering medium under incoherent illumination. It uses wavefront shaping of the scattered light together with an optimization procedure based on some assumptions about the object. Here we implemented the numerical simulation part in this work. It&amp;rsquo;s kind of intersting concept, isn&amp;rsquo;t it?&lt;/p&gt;
+&lt;p&gt;This is just for demonstration and personal interest.  For more details, please refer to the original literature&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-numerical-simulation-of-image-guided-wavefront-shaping&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/Image-guided_wavefront_shaping_hudbb9a705a0dfe3f6f005cac7d62ad919_751819_019e61e16ebbd410e59adb1b1f4c4b22.png 400w,
+               /media/Image-guided_wavefront_shaping_hudbb9a705a0dfe3f6f005cac7d62ad919_751819_46731f4e29d757cf14aeba0980e3c6bf.png 760w,
+               /media/Image-guided_wavefront_shaping_hudbb9a705a0dfe3f6f005cac7d62ad919_751819_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/Image-guided_wavefront_shaping_hudbb9a705a0dfe3f6f005cac7d62ad919_751819_019e61e16ebbd410e59adb1b1f4c4b22.png&#34;
+               width=&#34;760&#34;
+               height=&#34;425&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 1&lt;/strong&gt;. Numerical Simulation of Image-guided Wavefront Shaping
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Yeminy, Tomer &amp;amp; Katz, Ori. (2021). Guidestar-free image-guided wavefront shaping. Science Advances. 7. eabf5364. 10.1126/sciadv.abf5364.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>10倍双目望远镜设计</title>
+      <link>https://xiaodongwo.github.io/projects/5th_project/</link>
+      <pubDate>Thu, 16 Sep 2021 21:20:19 +0800</pubDate>
+      <guid>https://xiaodongwo.github.io/projects/5th_project/</guid>
+      <description>&lt;br/&gt;
+&gt;&gt; 项目概述：
+&lt;br/&gt;根据所给功能参数设计八倍双目望远镜，分析光学系统像差，设计精密仪器结构。
+&lt;br/&gt;
+&lt;br/&gt;
+&gt;&gt; 项目内容：
+&lt;br/&gt;1.运用几何光学所学知识，计算光学系统关键性参数，运用像差理论知识和计算机进行参数优化以减小像差，确定最终光学系统；
+&lt;br/&gt;2.运用精密机械设计和误差公差理论所学知识，选定各个零件，确定光机结构，如用压圈压紧各个透镜等（尺寸，公差误差等）；
+&lt;br/&gt;3.运用CAD和SOLIDWORKS设计零件结构及最终装配图，进行答辩。
+&lt;br/&gt;&lt;br/&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-双目望远镜部分零件设计及最终结构图&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/bicular_hu534aec16f87b6688786ed0acb542a730_1400213_a1d545056e89a3449b778c38b78cc9c4.png 400w,
+               /media/bicular_hu534aec16f87b6688786ed0acb542a730_1400213_00ed6d0faa5db757f44aea34d6f1f0e4.png 760w,
+               /media/bicular_hu534aec16f87b6688786ed0acb542a730_1400213_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/bicular_hu534aec16f87b6688786ed0acb542a730_1400213_a1d545056e89a3449b778c38b78cc9c4.png&#34;
+               width=&#34;640&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;br/&gt; &lt;strong&gt;Figure 1&lt;/strong&gt;. 双目望远镜部分零件设计及最终结构图
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-2-丝杆结构装配图&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/CAD_hu0063cb27bef41183307c1a010e676363_90403_2ec888cfde8d0328ca50bfefefc62b78.png 400w,
+               /media/CAD_hu0063cb27bef41183307c1a010e676363_90403_8f530f50d7fe0768d19f80e25754c987.png 760w,
+               /media/CAD_hu0063cb27bef41183307c1a010e676363_90403_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/CAD_hu0063cb27bef41183307c1a010e676363_90403_2ec888cfde8d0328ca50bfefefc62b78.png&#34;
+               width=&#34;760&#34;
+               height=&#34;393&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;br/&gt; &lt;strong&gt;Figure 2&lt;/strong&gt;. 丝杆结构装配图
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

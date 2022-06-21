@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Super-resolution microscopy | Xiaodong Wang</title>
+    <link>https://xiaodongwo.github.io/tag/super-resolution-microscopy/</link>
+      <atom:link href="https://xiaodongwo.github.io/tag/super-resolution-microscopy/index.xml" rel="self" type="application/rss+xml" />
+    <description>Super-resolution microscopy</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 08 Sep 2021 20:16:38 +0800</lastBuildDate>
+    <image>
+      <url>https://xiaodongwo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Super-resolution microscopy</title>
+      <link>https://xiaodongwo.github.io/tag/super-resolution-microscopy/</link>
+    </image>
+    
+    <item>
+      <title>Polymer-dots for STORM Imaging</title>
+      <link>https://xiaodongwo.github.io/projects/3rd_project/</link>
+      <pubDate>Wed, 08 Sep 2021 20:16:38 +0800</pubDate>
+      <guid>https://xiaodongwo.github.io/projects/3rd_project/</guid>
+      <description>&lt;p&gt;Fluorescent microscopy techniques are widely used in biological studies. However, the spatial resolution of fluorescent microscopy is restricted by the optical diffraction limit. In the past two decades, super-resolution imaging techniques with different principles have been invented to visualize biomolecules at nanometer scales. The development of nearly all these techniques is closely related to the advances in fluorescent probes.  In particular, the intrinsic properties of fluorescent probes constrain the optimal imaging performance of super-resolution nanoscopy techniques. Here for the first time we developed a novel class of semiconducting polymer dots that can operate in an optically switchable mode.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-polymer-dots-for-super-resolution-nanoscopy&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/FXF-pdots_hude0b9952417caf4ded36ad24773b5e32_1614581_ddf6c159e2f86f45d1ee85c5b8e06e77.png 400w,
+               /media/FXF-pdots_hude0b9952417caf4ded36ad24773b5e32_1614581_b6760b0d5c9abb6b2ada2ac3eb069714.png 760w,
+               /media/FXF-pdots_hude0b9952417caf4ded36ad24773b5e32_1614581_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/FXF-pdots_hude0b9952417caf4ded36ad24773b5e32_1614581_ddf6c159e2f86f45d1ee85c5b8e06e77.png&#34;
+               width=&#34;595&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 1&lt;/strong&gt;. Polymer Dots for Super-resolution Nanoscopy
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-2-polymer-dots-for-super-resolution-nanoscopy&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/FXF-STORM_hu488180b06055f5e8692f03a8f3d014ee_1554972_1962643e8046af67207a7b86db3f9732.png 400w,
+               /media/FXF-STORM_hu488180b06055f5e8692f03a8f3d014ee_1554972_853e1dd9dda7ad3205bc887aa278c38d.png 760w,
+               /media/FXF-STORM_hu488180b06055f5e8692f03a8f3d014ee_1554972_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/FXF-STORM_hu488180b06055f5e8692f03a8f3d014ee_1554972_1962643e8046af67207a7b86db3f9732.png&#34;
+               width=&#34;760&#34;
+               height=&#34;634&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 2&lt;/strong&gt;. Polymer Dots for Super-resolution Nanoscopy
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

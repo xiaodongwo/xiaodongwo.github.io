@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wavefrfont shaping | Xiaodong Wang</title>
+    <link>https://xiaodongwo.github.io/tag/wavefrfont-shaping/</link>
+      <atom:link href="https://xiaodongwo.github.io/tag/wavefrfont-shaping/index.xml" rel="self" type="application/rss+xml" />
+    <description>Wavefrfont shaping</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 08 Sep 2021 19:44:03 +0800</lastBuildDate>
+    <image>
+      <url>https://xiaodongwo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Wavefrfont shaping</title>
+      <link>https://xiaodongwo.github.io/tag/wavefrfont-shaping/</link>
+    </image>
+    
+    <item>
+      <title>Intelligent Algorithms for Wavefront Shaping</title>
+      <link>https://xiaodongwo.github.io/projects/1st_project/</link>
+      <pubDate>Wed, 08 Sep 2021 19:44:03 +0800</pubDate>
+      <guid>https://xiaodongwo.github.io/projects/1st_project/</guid>
+      <description>&lt;p&gt;Focusing or imaging through scattering media is still a big challenge because inhomogeneous media scatter incoming photons for focusing and outgoing photons for observation. Various approachs have been proposed to tackle the scattering issues. One can measure the transmission matrix of the scattering media in advance in order to compensate the scattering effect, yet this method relies heavily on the characterization of scattering media, making it time-comsuming and not general enough. Wavefront shaping is an optimization-algorithm based method that exploit no prior information of scattering media. Most off-the-self optimization algorithms focus on genetic algorithm and its variants. Genetic algorithm is one of the most powerful evolutionary algorithms that shares great popularity among industries. Here in this project we intent to compare the optimization performance in wavefront shaping using different evolutionary algorithms.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-wavefront-shaping-by-genetic-algorithm&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/GA_1D_WFS_hufb84d618928132b13f235d1b5f732ff7_672866_5d0a98fd17bdd76708e6e4fb4309ff2c.png 400w,
+               /media/GA_1D_WFS_hufb84d618928132b13f235d1b5f732ff7_672866_c1e90efce0cb48c647b06ef8bed8af26.png 760w,
+               /media/GA_1D_WFS_hufb84d618928132b13f235d1b5f732ff7_672866_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/GA_1D_WFS_hufb84d618928132b13f235d1b5f732ff7_672866_5d0a98fd17bdd76708e6e4fb4309ff2c.png&#34;
+               width=&#34;760&#34;
+               height=&#34;583&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 1&lt;/strong&gt;. Wavefront Shaping by Genetic Algorithm
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-2-numerical-demonstration-of-four-intelligent-algorithms-for-wavefront-shaping-a-genetic-algorithm-b-particle-swarm-optimization-c-beetle-antennae-search-and-d-sparrow-search-algorithm&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/FourIntelliAlgo_1D_IncidentLight_hu40db2b46e4329bc94c881778c7d15a35_853270_e3fa8cd16f7aebcf44dabb61f6508e20.png 400w,
+               /media/FourIntelliAlgo_1D_IncidentLight_hu40db2b46e4329bc94c881778c7d15a35_853270_db19acdfbec91a1ba47a5d796cecfcbd.png 760w,
+               /media/FourIntelliAlgo_1D_IncidentLight_hu40db2b46e4329bc94c881778c7d15a35_853270_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/FourIntelliAlgo_1D_IncidentLight_hu40db2b46e4329bc94c881778c7d15a35_853270_e3fa8cd16f7aebcf44dabb61f6508e20.png&#34;
+               width=&#34;760&#34;
+               height=&#34;563&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 2&lt;/strong&gt;. Numerical Demonstration of Four Intelligent Algorithms for Wavefront Shaping. (a) Genetic Algorithm, (b) Particle Swarm Optimization, (c) Beetle Antennae Search, and (d) Sparrow Search Algorithm.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-3-experimental-demonstration-of-genetic-algorithm-and-beetle-antennae-search-algorithm-for-wavefront-shaping-a-experimental-setup-b-focusing-by-genetic-algorithm-c-focusing-by-beetle-antennae-search-algorithm&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/ExperimentalFocusing_GA&amp;amp;BAS_hu679ae2a35b403cfd24481aa53436ef13_1693018_5fa1ead1ae3bae8fc3b8f5ac5f9680d0.png 400w,
+               /media/ExperimentalFocusing_GA&amp;amp;BAS_hu679ae2a35b403cfd24481aa53436ef13_1693018_13c5f10d09497b343c823acbc30d946a.png 760w,
+               /media/ExperimentalFocusing_GA&amp;amp;BAS_hu679ae2a35b403cfd24481aa53436ef13_1693018_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/ExperimentalFocusing_GA&amp;amp;BAS_hu679ae2a35b403cfd24481aa53436ef13_1693018_5fa1ead1ae3bae8fc3b8f5ac5f9680d0.png&#34;
+               width=&#34;745&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 3&lt;/strong&gt;. Experimental Demonstration of Genetic Algorithm and Beetle Antennae Search Algorithm for Wavefront Shaping. (a) Experimental setup, (b) Focusing by genetic algorithm, (c) Focusing by beetle antennae search algorithm.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Note that in this project we aim to develop fluorescence imaging through scattering media using polymer dots (a type of fluorescence probe developed by group of &lt;a href=&#34;http://wulab.bme.sustech.edu.cn/team-member/changfeng-wu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Changfeng Wu&lt;/em&gt;&lt;/a&gt;). And that&amp;rsquo;s why the numerical demonstration exploys a reflective optical scheme simulating fluorescence backpropagating through scatterig media, while in experimental section we are adopting a simpler transmissive optical scheme for algorithm validation.  For more details of the simulation demonstration, please refer to literatures&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Dayan Li, Sujit Kumar Sahoo, Huy Quoc Lam, Dong Wang, and Cuong Dang , &amp;ldquo;Non-invasive optical focusing inside strongly scattering media with linear fluorescence&amp;rdquo;, Appl. Phys. Lett. 116, 241104 (2020) &lt;a href=&#34;https://doi.org/10.1063/5.0004071&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1063/5.0004071&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

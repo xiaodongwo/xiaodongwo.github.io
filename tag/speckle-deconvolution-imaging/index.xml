@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Speckle deconvolution imaging | Xiaodong Wang</title>
+    <link>https://xiaodongwo.github.io/tag/speckle-deconvolution-imaging/</link>
+      <atom:link href="https://xiaodongwo.github.io/tag/speckle-deconvolution-imaging/index.xml" rel="self" type="application/rss+xml" />
+    <description>Speckle deconvolution imaging</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 08 Sep 2021 19:46:02 +0800</lastBuildDate>
+    <image>
+      <url>https://xiaodongwo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Speckle deconvolution imaging</title>
+      <link>https://xiaodongwo.github.io/tag/speckle-deconvolution-imaging/</link>
+    </image>
+    
+    <item>
+      <title>Fluorescence-based Speckle Deconvolution Imaging</title>
+      <link>https://xiaodongwo.github.io/projects/2st_project/</link>
+      <pubDate>Wed, 08 Sep 2021 19:46:02 +0800</pubDate>
+      <guid>https://xiaodongwo.github.io/projects/2st_project/</guid>
+      <description>&lt;p&gt;Fast imaging through turbid media is of great interest in fields of astronomical observation and biological imaging. State-of-the-art approachs relies heavily on iterative optimization algorithms or prior charactirazation of scattering media,  hence impeding real time imaging scenerio. Memory-effect based methods expoit the inherent correlation of incident tilted light and thus can realize instant imaging thorugh scattering media.  Speckle deconvolution imaging through scattering media was proposed in 2016 for the first time and gains popularities these years in this field. To the best of our knowledge, this method has rarely been applied to fluorescence imaging in a reflective optical scheme. Here in this project we are showing some reconstruction results using polymer dots as fluorescence signal.&lt;/p&gt;
+&lt;p&gt;The schematic for deconvolution imaging through scattering media is presented in Figure 1. The bottom-right corner represents the detailed derivation for PSF scaling, which can be found useful in subsequent extended-DOF and non-invasive imaging.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-schematic-of-fluorescence-imaging-through-scattering-media-by-speckle-deconvolution&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/Schematic_hu7f4492a5ab451571dd432d474de2ddcf_1360457_eb894e75e72ef3f2047fc1ba5f1b5d29.png 400w,
+               /media/Schematic_hu7f4492a5ab451571dd432d474de2ddcf_1360457_00b8bb10a062c8c92b1fc113dd4436b4.png 760w,
+               /media/Schematic_hu7f4492a5ab451571dd432d474de2ddcf_1360457_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/Schematic_hu7f4492a5ab451571dd432d474de2ddcf_1360457_eb894e75e72ef3f2047fc1ba5f1b5d29.png&#34;
+               width=&#34;760&#34;
+               height=&#34;498&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 1&lt;/strong&gt;. Schematic of fluorescence imaging through scattering media by speckle deconvolution
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;A home-built epi-fluorescence setup (a) for fast imaging through scattering media is presented, along with a custom-designed optical filter wheel (b) and polymer-dots based fluorescence sample (c). The system is operated and controled by LabVIEW software.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-2-experimental-setup-of-fluorescence-imaging-through-scattering-media-by-speckle-deconvolution&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/Setup_hua3c117c02683fa3d7486d254f14b8669_3867803_86797fab9445caf02e7a826aed1a2ab2.png 400w,
+               /media/Setup_hua3c117c02683fa3d7486d254f14b8669_3867803_1a6b37fa0fbb4b1e198d49885fc54fb6.png 760w,
+               /media/Setup_hua3c117c02683fa3d7486d254f14b8669_3867803_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/Setup_hua3c117c02683fa3d7486d254f14b8669_3867803_86797fab9445caf02e7a826aed1a2ab2.png&#34;
+               width=&#34;760&#34;
+               height=&#34;471&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 2&lt;/strong&gt;. Experimental setup of fluorescence imaging through scattering media by speckle deconvolution
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Speckle deconvolution imaging is demonstrated through the epi-fluorescence scattering imaging system. By measuring the PSF speckle (a) and object speckle (b) sequentially at the same depth, Wiener deconvolution manages to reconstruct the hidden object behind the thin scattering media with high fidiety, as shown in (d) the reconstruction and (c) the unknown object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-3-fluorescence-imaging-through-scattering-media-by-speckle-deconvolution&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screen reader text&#34; srcset=&#34;
+               /media/SpeckleDeconvo_hu140a324cefe85c824e331ed889362125_604885_40101a4aedfc6c7948962f239458dc99.png 400w,
+               /media/SpeckleDeconvo_hu140a324cefe85c824e331ed889362125_604885_e21ae19275bdb1539143bd7a60fec86e.png 760w,
+               /media/SpeckleDeconvo_hu140a324cefe85c824e331ed889362125_604885_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://xiaodongwo.github.io/media/SpeckleDeconvo_hu140a324cefe85c824e331ed889362125_604885_40101a4aedfc6c7948962f239458dc99.png&#34;
+               width=&#34;760&#34;
+               height=&#34;596&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Figure 3&lt;/strong&gt;. Fluorescence imaging through scattering media by speckle deconvolution
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Subsequent experimental demonstration for extended DOF and noninvasive imaging through scattering media will be updated later&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
