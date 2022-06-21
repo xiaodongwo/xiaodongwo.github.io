@@ -5,12 +5,33 @@
     <link>https://xiaodongwo.github.io/post/</link>
       <atom:link href="https://xiaodongwo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 16 Sep 2021 22:43:11 +0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 21 Jun 2022 21:41:59 +0800</lastBuildDate>
     <image>
       <url>https://xiaodongwo.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
       <link>https://xiaodongwo.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>AcademicBlogging</title>
+      <link>https://xiaodongwo.github.io/post/academicblogging/</link>
+      <pubDate>Tue, 21 Jun 2022 21:41:59 +0800</pubDate>
+      <guid>https://xiaodongwo.github.io/post/academicblogging/</guid>
+      <description>&lt;h1 id=&#34;date-published&#34;&gt;Date published&lt;/h1&gt;
+&lt;p&gt;date: &amp;ldquo;2022-6-21T00:00:00Z&amp;rdquo;&lt;/p&gt;
+&lt;h1 id=&#34;date-updated&#34;&gt;Date updated&lt;/h1&gt;
+&lt;p&gt;lastmod: &amp;ldquo;2022-6-21T00:00:00Z&amp;rdquo;&lt;/p&gt;
+&lt;h1 id=&#34;is-this-an-unpublished-draft&#34;&gt;Is this an unpublished draft?&lt;/h1&gt;
+&lt;p&gt;draft: false&lt;/p&gt;
+&lt;h1 id=&#34;show-this-page-in-the-featured-widget&#34;&gt;Show this page in the Featured widget?&lt;/h1&gt;
+&lt;p&gt;featured: false&lt;/p&gt;
+&lt;h2 id=&#34;oct&#34;&gt;OCT&lt;/h2&gt;
+&lt;p&gt;Optical coherence tomography (OCT) is an optical instrument that can perform cross-sectional image of biological tissue within less than 10 micro axial resolution using broadband light waves (830nm) near infrared light. The beam is then split into two beams (reference beam and probe beam) by beam splitter. Probe beam reach to the target tissue while reference beam reach to the reference mirror at a known distance. The echo time delay of light reflected from various layer of target tissue is compared with the echo time delay of light reflected from the reference mirror. The interference is measured by a photodetector which produce a range of time delays for comparison. There are two main OCT technologies, time-domain OCT (TD-OCT) and Fourier-domain OCT (FD-OCT). In a TD-OCT measurement the light echoes are
+detected sequentially by the step-movement of a reference mirror, while in FD-OCT the light echoes come at the same time from all axial depths and are detected as modulations in the source spectrum with all the spectral components captured simultaneously. FD-OCT provides faster imaging speed due to its non-scanning fashion compared with TD-OCT.&lt;/p&gt;
+&lt;p&gt;Conventionally, both the time-domain OCT (TD-OCT) and Fourier-domain OCT (FD-OCT) perform beam steering to scan the lateral plane (x; y). This scanning process assumes a single photo-diode to capture the light each time from a single spatial point. One natural question is that &amp;ldquo;can we capture the whole spatial points in parallel?&amp;rdquo;. Full-field or wide-field OCT is thereafter is invented to address this problem.&lt;/p&gt;
+&lt;p&gt;Will be updated soon&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>News</title>
@@ -191,7 +212,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;I obtained my bachelor&amp;rsquo;s degree with Bachelor Thesis of &amp;ldquo;Design of Asymmetric Integrated Waveguide M-Z Interferometer&amp;rdquo;&lt;br&gt;
+&lt;p&gt;I obtained my bachelor&amp;rsquo;s degree with Bachelor Thesis of &amp;ldquo;Design of Asymmetric Integrated Waveguide M-Z Interferometer&amp;rdquo;!
 
 
 
