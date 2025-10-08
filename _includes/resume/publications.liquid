@@ -3,13 +3,8 @@
   {% for content in publications %}
     <li class="list-group-item">
       <div class="row">
-        <!-- ===== 年份列 ===== -->
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-          {% if content.releaseDate %}
-            {% assign date = content.releaseDate | split: '-' | join: '.' %}
-          {% else %}
-            {% assign date = '' %}
-          {% endif %}
+          {% if content.releaseDate %} {% assign date = content.releaseDate | split: '-' | join: '.' %} {% else %} {% assign date = '' %} {% endif %}
           <table class="table-cv">
             <tbody>
               <tr>
@@ -20,34 +15,12 @@
             </tbody>
           </table>
         </div>
-
-        <!-- ===== 右侧信息列 ===== -->
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-
-          <!-- ===== 标签区 (abbr / award / highlight) ===== -->
-          <div class="ml-1 ml-md-4 mb-1">
-            {% if content.abbr %}
-              <span class="publication-badge" style="background-color:#7b5cf4;">{{ content.abbr }}</span>
-            {% endif %}
-            {% if content.award %}
-              <span class="publication-badge oral" style="background-color:#ff6b35;">{{ content.award }}</span>
-            {% endif %}
-            {% if content.highlight %}
-              <span class="publication-badge highlight" style="background-color:#d6336c;">{{ content.highlight }}</span>
-            {% endif %}
-          </div>
-
-          <!-- ===== 论文标题 ===== -->
           <h6 class="title font-weight-bold ml-1 ml-md-4">
             <a href="{{ content.url }}">{{ content.name }}</a>
           </h6>
-
-          <!-- ===== 出版信息 ===== -->
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.publisher }}</h6>
-
-          <!-- ===== 摘要或附加说明 ===== -->
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
-
         </div>
       </div>
     </li>
