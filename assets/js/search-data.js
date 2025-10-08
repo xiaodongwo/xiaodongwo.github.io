@@ -406,8 +406,14 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-scinerf-neural-radiance-fields-from-a-snapshot-compressive-image-https-www-light-am-com-article-doi-10-37188-lam-2024-029-was-accepted-to-cvpr-2024-as-highlight-paper",
+          title: 'SCINeRF: Neural Radiance Fields from a Snapshot Compressive Image (https://www.light-am.com/article/doi/10.37188/lam.2024.029) was accepted to...',
+          description: "",
+          section: "News",},{id: "news-plug-and-play-diffusion-models-for-inverse-problems-with-data-consistency-projection-arxiv-2509-09365-was-accepted-to-icip-workshop-2025",
+          title: 'Plug-and-Play Diffusion Models for Inverse Problems with Data Consistency Projection (arXiv:2509.09365) was accepted...',
+          description: "",
+          section: "News",},{id: "news-spectral-compressive-imaging-via-chromaticity-intensity-decomposition-arxiv-2509-16690-was-accepted-to-neurips-2025",
+          title: 'Spectral Compressive Imaging via Chromaticity-Intensity Decomposition (arXiv:2509.16690) was accepted to NeurIPS 2025.',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
