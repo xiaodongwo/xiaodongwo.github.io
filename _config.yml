@@ -265,12 +265,12 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: Wang
-  first_name: Xiaodong
+  first_name: [Xiaodong]
 
   style: apa
   locale: en
   profile: true
-  show_all_authors: true
+  max_authors: 20
 
   source: /_bibliography/
   bibliography: papers.bib
