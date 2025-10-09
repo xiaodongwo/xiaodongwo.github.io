@@ -473,18 +473,18 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/https://www.linkedin.com/in/xiaodong-wang-582999330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "_blank");
         },
       },{
+        id: 'social-researchgate',
+        title: 'ResearchGate',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.researchgate.net/profile/https://www.researchgate.net/profile/Xiaodong-Wang-77?ev=hdr_xprf&_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoiaG9tZSJ9fQ/", "_blank");
+        },
+      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
           window.open("https://scholar.google.com/citations?user=https://scholar.google.com/citations?user=2JXMfrcAAAAJ&hl=en", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
