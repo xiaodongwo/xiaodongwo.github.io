@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Plug-and-Play Diffusion Models for Inverse Problems with Data Consistency Projection** ([arXiv:2509.09365](https://arxiv.org/pdf/2509.09365)) was accepted to *ICIP Workshop 2025*.
+Our work on [*Diffusion Model*](https://arxiv.org/pdf/2509.09365) was accepted to *ICIP Workshop 2025*.
