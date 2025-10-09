@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our work on [*CASSI reconstruction*](https://arxiv.org/pdf/2509.16690) was accepted to *NeurIPS 2025*.
+Our work on [CASSI reconstruction](https://arxiv.org/pdf/2509.16690) was accepted to **NeurIPS 2025**.
