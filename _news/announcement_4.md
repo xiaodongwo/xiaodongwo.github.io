@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our work on [Diffusion Model](https://arxiv.org/pdf/2509.09365) was accepted to *ICIP Workshop 2025*.
+Our work on [Diffusion Model](https://arxiv.org/pdf/2509.09365) was accepted to **ICIP Workshop 2025**.
