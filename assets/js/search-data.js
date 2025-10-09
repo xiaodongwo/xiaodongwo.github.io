@@ -398,8 +398,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-our-work-on-cacti-reconstruction-for-ultrafast-laser-processing-was-accepted-to-light-advanced-manufacturing",
+          title: 'Our work on CACTI reconstruction for ultrafast laser processing was accepted to Light:...',
           description: "",
           section: "News",},{id: "news-our-work-on-cacti-reconstruction-for-ultrafast-laser-processing-https-www-light-am-com-article-doi-10-37188-lam-2024-029-was-accepted-to-light-advanced-manufacturing",
           title: 'Our work on CACTI reconstruction for ultrafast laser processing (https://www.light-am.com/article/doi/10.37188/lam.2024.029) was accepted to...',
