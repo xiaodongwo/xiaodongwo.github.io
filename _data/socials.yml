@@ -32,7 +32,7 @@ linkedin_username: https://www.linkedin.com/in/xiaodong-wang-582999330?utm_sourc
 # pinterest_id: # your pinterest id
 # publons_id: # your ID on Publons
 # quora_username: # your Quora username
-# research_gate_profile: # your profile on ResearchGate
+research_gate_profile: https://www.researchgate.net/profile/Xiaodong-Wang-77?ev=hdr_xprf&_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoiaG9tZSJ9fQ # your profile on ResearchGate
 # rss_icon: true # comment this line to hide the RSS icon
 scholar_userid: https://scholar.google.com/citations?user=2JXMfrcAAAAJ&hl=en # your Google Scholar ID
 # scopus_id: # your profile on Scopus
@@ -50,7 +50,7 @@ scholar_userid: https://scholar.google.com/citations?user=2JXMfrcAAAAJ&hl=en # y
 # x_username: # your X handle
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
-custom_social: # can be any name here other than the ones already defined above
-  logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
-  title: Custom Social
-  url: https://www.alberteinstein.com/
+# custom_social: # can be any name here other than the ones already defined above
+#   logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
+#   title: Custom Social
+#   url: https://www.alberteinstein.com/
