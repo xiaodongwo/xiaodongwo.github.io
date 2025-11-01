@@ -24,6 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Welcome! I am currently a joint Ph.D. student in the [Sensing and Computational Imaging Lab](https://xyvirtualgroup.github.io/) at [Zhejiang University](https://www.zju.edu.cn/english/)/[Westlake University](https://en.westlake.edu.cn/), advised by [Prof. Xin Yuan](https://xyvirtualgroup.github.io). I am a transdisciplinary optimist interested in exploiting and developing novel computational imaging methods for practical scenerios. **I am currently looking for internship or postdoc oppotunities!**
+Welcome! I am currently a joint Ph.D. student in the [Sensing and Computational Imaging Lab](https://xyvirtualgroup.github.io/) at [Zhejiang University](https://www.zju.edu.cn/english/)/[Westlake University](https://en.westlake.edu.cn/), advised by [Prof. Xin Yuan](https://xyvirtualgroup.github.io). My research interests lie at the intersection of computational photography, computer vision, and physics-based imaging. **I am currently looking for internship, industrial or academic oppotunities!**
 
 Prior to this, I obtained my master degree under the supervison of [Prof. Changfeng Wu](http://wulab.bme.sustech.edu.cn/) at [Southern University of Science and Technology](https://www.sustech.edu.cn/en/). I obtained my Bachelor's degree in Optical Engineering from [Changchun University of Science and Technology](https://www.cust.edu.cn/index.htm).
