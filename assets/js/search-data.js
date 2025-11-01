@@ -399,7 +399,7 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
             },},{id: "news-our-news-amp-amp-reviews-work-on-optical-coherence-tomography-was-published-in-light-science-amp-amp-applications",
-          title: 'Our news &amp;amp;amp; reviews work on Optical coherence tomography was published in Light:...',
+          title: 'Our news &amp;amp;amp; reviews work on Optical Coherence Tomography was published in Light:...',
           description: "",
           section: "News",},{id: "news-our-work-on-fluorescence-imaging-through-scattering-media-was-accepted-to-optics-and-lasers-in-engineering",
           title: 'Our work on Fluorescence Imaging through Scattering Media was accepted to Optics and...',
