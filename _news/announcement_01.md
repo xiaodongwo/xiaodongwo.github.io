@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our work on [Super-resolution Fluorescence Imaging](https://www.sciencedirect.com/science/article/pii/S0143816622004432) was accepted to **Chemical Communications**.
+Our work on [Super-resolution Fluorescence Imaging](https://pubs.rsc.org/en/content/articlelanding/2023/cc/d2cc06707b) was accepted to **Chemical Communications**.
