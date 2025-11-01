@@ -108,7 +108,9 @@ pagination:
     {% else %}
       {% assign postlist = site.posts %}
     {% endif %}
-
+    
+    {% assign postlist = all_posts | where: "show_in_blog", true %}
+    
     {% for post in postlist %}
 
     {% if post.external_source == blank %}
