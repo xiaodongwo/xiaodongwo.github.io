@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our work on [Diffusion Model](https://arxiv.org/pdf/2509.09365) was accepted to **ICIP 2025**, we also wrote a tutorial for diffusion model (still updating)
+Our work on [Diffusion Model](https://arxiv.org/pdf/2509.09365) was accepted to **ICIP 2025**, we also wrote a tutorial for diffusion model (still updating).
