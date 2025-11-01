@@ -109,7 +109,7 @@ pagination:
       {% assign postlist = site.posts %}
     {% endif %}
     
-    {% assign postlist = all_posts | where: "show_in_blog", true %}
+    {% assign postlist = all_posts | where_exp: "post", "post.tags contains 'research'" %}
     
     {% for post in postlist %}
 
@@ -121,7 +121,7 @@ pagination:
     {% assign year = post.date | date: "%Y" %}
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
-
+    
     <li>
 
 {% if post.thumbnail %}
