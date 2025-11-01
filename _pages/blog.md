@@ -109,8 +109,6 @@ pagination:
       {% assign postlist = site.posts %}
     {% endif %}
     
-    {% assign postlist = all_posts | where_exp: "post", "post.tags contains 'research'" %}
-    
     {% for post in postlist %}
 
     {% if post.external_source == blank %}
