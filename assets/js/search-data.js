@@ -398,7 +398,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-our-work-on-cacti-for-laser-processing-was-accepted-to-light-advanced-manufacturing",
+            },},{id: "news-our-work-on-fluorescence-imaging-through-scattering-media-was-accepted-to-optics-and-lasers-in-engineering",
+          title: 'Our work on Fluorescence Imaging through Scattering Media was accepted to Optics and...',
+          description: "",
+          section: "News",},{id: "news-our-work-on-cacti-for-laser-processing-was-accepted-to-light-advanced-manufacturing",
           title: 'Our work on CACTI for laser processing was accepted to Light: Advanced Manufacturing....',
           description: "",
           section: "News",},{id: "news-our-work-on-snapshot-nerf-was-accepted-to-cvpr-2024-as-highlight-paper",
