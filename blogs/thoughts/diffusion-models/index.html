@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tutorial on diffusion model — Xiaodong Wang</title><meta name="description" content="Notes and derivations on diffusion models, forward and reverse processes, and imaging inverse problems.">
+<meta name="color-scheme" content="light"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/fonts/fonts.css"><link rel="stylesheet" href="/styles.css">
+<script src="/app.js" defer></script><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']]},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']},startup:{ready(){MathJax.startup.defaultReady();MathJax.startup.promise.then(()=>document.documentElement.dataset.mathReady='true')}}};</script><script defer src="/assets/vendor/mathjax/tex-chtml.js"></script></head>
+<body class=""><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><nav class="main-nav" aria-label="Main navigation"><a href="/" class="nav-link">Home</a><a href="/assets/pdf/CV_Xiaodong_Wang_Academic.pdf" class="nav-link">CV</a><a href="/papers/" class="nav-link">Papers</a>
+    <details class="nav-dropdown"><summary class="nav-link current">Blogs <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+    <div class="dropdown-content"><a href="/blogs/">All blogs</a><a href="/blogs/magic/">Magic</a><a href="/blogs/movie/">Movie</a><a href="/blogs/thoughts/">Thoughts</a></div></details>
+    </nav></header>
+<main id="main" class="site-main"><article class="page-content article-page"><a class="back-link" href="/blogs/thoughts/technical/">← Technical Thoughts</a><header class="article-header"><p class="post-meta"><span>Technical Thoughts</span><time datetime="2025-03-26">2025-03-26</time></p><h1>Tutorial on diffusion model</h1><p class="article-description">Notes and derivations on diffusion models, forward and reverse processes, and imaging inverse problems.</p></header><p class="article-note">This tutorial is a work in progress. Some illustrations referenced in the original notes are not yet available.</p><div class="article-body"><blockquote>
+<p>🕓 Last updated: <strong>2024.10</strong></p>
+</blockquote>
+<h3 id="table-of-contents"><strong>Table of Contents</strong></h3>
+<ol>
+<li><strong>DDPM</strong></li>
+</ol>
+<p>(1) Core idea of generative model: motivation, the big picture<br />
+   (2) Forward process: $q(x_t|x_0)$<br />
+   (3) Backward process: $p(x_{t-1}|x_t)$<br />
+   (4) Methods for modeling $p(x_{t-1}|x_t)$: 5 options<br />
+   (5) DDPM principle (KL)<br />
+   (6) Train and sample pipeline<br />
+   (7) Conclusion  </p>
+<ol start="2">
+<li><strong>Score-Based Diffusion Model</strong></li>
+</ol>
+<p>(1) ODE and SDE, score function<br />
+   (2) Forward process (relates to DDPM)<br />
+   (3) Backward process (relates to DDPM)  </p>
+<ol start="3">
+<li><strong>DDIM</strong></li>
+</ol>
+<p>(1) Difference with DDPM  </p>
+<ol start="4">
+<li><strong>Diffusion Model for Inverse Problem</strong></li>
+</ol>
+<p>(1) Song Yang and Song Jiaming<br />
+   (2) DPS<br />
+   (3) Michael Elad  </p>
+<ol start="5">
+<li><strong>Coding DDPM from Scratch</strong></li>
+</ol>
+<h3 id="useful-resources"><strong>Useful Resources</strong></h3>
+<ul>
+<li><a href="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/">"What are Diffusion Models?", a blog by Lilian Weng.</a></li>
+<li><a href="https://yang-song.net/blog/2021/score/">"Generative Modeling by Estimating Gradients of the Data Distribution", a blog by Yang Song.</a>==</li>
+<li><a href="https://arxiv.org/abs/2403.18103">"Tutorial on Diffusion Models for Imaging and Vision". Stanley H. Chan.</a></li>
+<li><a href="https://www.arxiv.org/pdf/2410.00083">"A Survey on Diffusion Models for Inverse Problems". Mauricio Delbracio.</a></li>
+<li><a href="https://arxiv.org/abs/2406.08929">"Step-by-Step Diffusion: An Elementary Tutorial". Preetum Nakkiran, Arwen Bradley, Hattie Zhou, and Madhu Advani.</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL0H3pMD88m8XPBlWoWGyal45MtnwKLSkQ">"A Course on Generative AI - Diffusion Models". Michael Elad (YouTube).</a></li>
+<li><a href="https://www.youtube.com/watch?v=cS6JQpEY9cs">“Tutorial on Denoising Diffusion-based Generative Modeling: Foundations and Applications” (YouTube).</a></li>
+<li><a href="https://github.com/diff-usion/Awesome-Diffusion-Models#introductory-posts">GitHub: Awesome Diffusion Models.</a></li>
+</ul>
+<h2 id="what-are-diffusion-models">What are diffusion models?</h2>
+<hr />
+<p>Diffusion models are a class of generative models in artificial intelligence that uniquely generate high-quality samples. The goal of diffusion model (or generative model) is to learn the underlying distribution $p(x)$ given i.i.d. samples. Once we obtain $p(x)$, we can synthesize an unlimited number of novel samples by sampling from this distribution, or compute the probability value for any potential data points.</p>
+<p>To estimate the unknown probability distribution of samples, we will have to create a model to represent parameterized probability distribution. And we hope this model parameter is tuned to ensure the model distribution close to the sample distribution. <strong>One way to model this problem, is to learn a transformation from some easy-to-sample distribution (such as Gaussian</strong><br />
+<strong>noise) to our target distribution</strong> $p(x)$<strong>.</strong> Diffusion models offer a general framework for learning such transformations. <strong>The clever trick of diffusion is to reduce the problem of sampling from distribution</strong> $p(x)$ <strong>into to a sequence of easier sampling problems.</strong></p>
+<blockquote>
+<p><strong>Note.</strong> One question: what do $p(x)$ mean for images in the context of generative models, the joint probability distribution over the entire vector $x$, which represents the entire image or pixel-wise distribution of an image?</p>
+</blockquote>
+<p>Several diffusion-based generative models have been proposed with similar ideas underneath, including <em>diffusion probabilistic models</em> (<a href="https://arxiv.org/abs/1503.03585">Sohl-Dickstein et al., 2015</a>), <em>noise-conditioned score network</em> (<strong>NCSN</strong>; <a href="https://arxiv.org/abs/1907.05600">Yang &amp; Ermon, 2019</a>), and <em>denoising diffusion probabilistic models</em> (<strong>DDPM</strong>; <a href="https://arxiv.org/abs/2006.11239">Ho et al. 2020</a>). The essential idea, inspired by non-equilibrium statistical physics, is to systematically and slowly destroy structure in a data distribution through an iterative forward diffusion process. We then learn a reverse diffusion process that restores structure in data, yielding a highly flexible and tractable generative model of the data. Therefore, a diffusion model consists of two major components: the forward diffusion process and the reverse diffusion process.</p>
+<h3 id="forward-diffusion">Forward diffusion</h3>
+<p>We start with a good-looking image, a forward diffusion process is defined by gradually mixing the input with small amount of Gaussian noise, up to the point where the good-looking image vanishes and turns to pure Gaussian noise.</p>
+<p>We shall discuss a mathematical formulation of the forward process. Given a data point sampled from a real data distribution $x_0 \sim q(x)$, we add small amount of Gaussian noise to the sample in $T$ steps, producing a sequence of noisy samples $\textbf{x}_{1}, \textbf{x}_{2}, ..., \textbf{x}_{T}$. Each step performs a simple mixture of the previous state and a weighted white Gaussian i.i.d. noise. Assume $0 &lt; \beta_t \ll 1$,</p>
+<p>$$x_t = \sqrt{1 - \beta_t} x_{t-1}+ \sqrt{\beta_t} v_t \quad \text{where} \quad v_t \sim \mathcal{N}(0, \mathbf{I})$$</p>
+<p>Given $x_{t-1}$, $q({x}_t\|{x}_{t-1})$ can be expressed as Gaussian distribution. And we will adopt the following notation using <strong>reparameterization</strong>:</p>
+<p>$$q({x}_{t} | {x}_{t-1}) = \mathcal{N}\left({x}_t; \mu_t, \Sigma_t\right) = \mathcal{N}\left({x}_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t \mathbf{I}\right)$$</p>
+<p>An interesting observation concerning the above equation is that rather than compute the state of following time step based on the previous one, we could easily tie every instance $x_t$ to the initial $x_0$ as an accumulation of noise vectors using a wider diffusion kernel.</p>
+<p>Let $\alpha_t = {1 - \beta_t}$ , $\bar{\alpha}_t = \prod_{i=1}^{t} \alpha_i$ and $\boldsymbol{\epsilon} \sim \mathcal{N}(0, I)$.</p>
+<p>$$\begin{align*}  
+\mathbf{x}_{t} &amp;= \sqrt{1 - \beta_t} x_{t-1} + \sqrt{\beta_t} v_t \\  
+&amp;= \sqrt{\bar{\alpha}_t} \mathbf{x}_0 + \sqrt{1-\bar{\alpha}_t} \boldsymbol{\epsilon}  
+\end{align*}$$</p>
+<ul>
+<li>The detailed derivation of the above accumulative formula</li>
+</ul>
+<p>$$ 
+\begin{align*} 
+\mathbf{x}_{t} &amp;= \sqrt{1 - \beta_t} \mathbf{x}_{t-1} + \sqrt{\beta_t} \mathbf{v}_t \\ 
+&amp;=\sqrt{\alpha_t} \mathbf{x}_{t-1} + \sqrt{1-\alpha_t} \boldsymbol{\epsilon}_{t-1} \\ 
+&amp;= \sqrt{\alpha_t}(\sqrt{\alpha_{t-1}} \mathbf{x}_{t-2} + \sqrt{1-\alpha_{t-1}}\boldsymbol{\epsilon}_{t-2}) + \sqrt{1-\alpha_t} \boldsymbol{\epsilon}_{t-1} \\ 
+&amp;= \sqrt{\alpha_t \alpha_{t-1}} \mathbf{x}_{t-2}+\sqrt{\alpha_t (1-\alpha_{t-1})} \boldsymbol{\epsilon}_{t-2} + \sqrt{1-\alpha_t} \boldsymbol{\epsilon}_{t-1} \\ 
+&amp;=\boxed{\sqrt{\alpha_t \alpha_{t-1}\cdots\alpha_1}\mathbf{x}_0}_{\text{1}} + \boxed{\sqrt{1-\alpha_t} \boldsymbol{\epsilon}_{t-1} + \sqrt{\alpha_t (1-\alpha_{t-1})} \boldsymbol{\epsilon}_{t-2}+\cdots+ \sqrt{\alpha_t\cdots \alpha_2 (1-\alpha_1)} \boldsymbol{\epsilon}_{0}}_{\text{2}}
+\end{align*}
+$$</p>
+<p>$$ 
+\begin{align*} 
+\mathbf{x}_{t} &amp;= \sqrt{1 - \beta_t} \mathbf{x}_{t-1} + \sqrt{\beta_t} \mathbf{v}_t \\ &amp;=\sqrt{\alpha_t} \mathbf{x}_{t-1} + \sqrt{1-\alpha_t} \boldsymbol{\epsilon}_{t-1} \\ &amp;= \sqrt{\alpha_t}(\sqrt{\alpha_{t-1}} \mathbf{x}_{t-2} + \sqrt{1-\alpha_{t-1}}\boldsymbol{\epsilon}_{t-2}) + \sqrt{1-\alpha_t} \boldsymbol{\epsilon}_{t-1} \\ &amp;= \sqrt{\alpha_t \alpha_{t-1}} \mathbf{x}_{t-2}+\sqrt{\alpha_t (1-\alpha_{t-1})} \boldsymbol{\epsilon}_{t-2} + \sqrt{1-\alpha_t} \boldsymbol{\epsilon}_{t-1} \\ &amp;=\boxed{\sqrt{\alpha_t \alpha_{t-1}\cdots\alpha_1}\mathbf{x}_0}_{\text{1}} + \boxed{\sqrt{1-\alpha_t} \boldsymbol{\epsilon}_{t-1} + \sqrt{\alpha_t (1-\alpha_{t-1})} \boldsymbol{\epsilon}_{t-2}+\cdots+ \sqrt{\alpha_t\cdots \alpha_2 (1-\alpha_1)} \boldsymbol{\epsilon}_{0}}_{\text{2}}
+\end{align*}
+$$</p>
+<p>We see the 1st term can be expressed as $\sqrt{\bar{\alpha}_t} \mathbf{x}_0$. The remaining part needs to be further simplified. The second part sums $t$ independent Gaussian i.i.d. ingredients. Recall that when we merge two Gaussians with different variance, $\mathcal{N}(0,σ_1^2 \mathbf{I})$ and $\mathcal{N}(0,σ_2^2 \mathbf{I})$, the new distribution is $\mathcal{N}(0,(σ_1^2+σ_2^2) \mathbf{I})$. By summing up the variance (square of the given coefficients), we obtain:</p>
+<p>$$\sum_{q=t}^{1} (1-\alpha_q) \prod_{s=q+1}^{t}\alpha_s$$</p>
+<p>Now we need to prove the above expression is exactly equal to $\sqrt{1-\bar{\alpha}_t}$ . Below we proof it by induction.</p>
+<hr />
+<h5 id="claim-mathplaceholder32end">Claim: $1 - \bar{\alpha}_t = 1 - \prod_{s=1}^{t}\alpha_s = \sum_{q=t}^{1} (1-\alpha_s) \prod_{s=q+1}^{t}\alpha_s$</h5>
+<p><strong>Proof: By induction</strong></p>
+<p>$t=1:$ $1-\alpha_1 = 1-(1-\beta_1)=\beta_1$</p>
+<p>$t=2:$ $1-\alpha_2 = 1-(1-\beta_1)(1-\beta_2)=\beta_2 + \beta_1(1-\beta_2)$</p>
+<p>Assume the above is true for $t$ and show that it remains true for $t+1$:</p>
+<p>$$
+\begin{align*}  
+\sum_{q=t+1}^{1} (1-\alpha_q) \prod_{s=q+1}^{t+1}\alpha_s &amp;= 1-\alpha_{t+1} + \sum_{q=t}^{1} (1-\alpha_s) \prod_{s=q+1}^{t+1}\alpha_s \\ &amp;= 1-\alpha_{t+1} + \alpha_{t+1}\sum_{q=t}^{1} (1-\alpha_s) \prod_{s=q+1}^{t}\alpha_s \\ &amp;= 1-\alpha_{t+1} + \alpha_{t+1}(1 - \prod_{s=1}^{t}\alpha_s)     \\ &amp;= 1 - \prod_{s=1}^{t+1}\alpha_s \\ &amp;= 1 - \bar{\alpha}_{t+1}  
+\end{align*}
+$$</p>
+<p>This is exactly the same expression with $t+1$.</p>
+<hr />
+<p>Following <strong>reparameterization trick,</strong></p>
+<p>$$q({x}_t | {x}_{0}) = \mathcal{N}\left({x}_t; \sqrt{\bar{\alpha}_t} {x}_{0}, (1-\bar{\alpha}_t) \mathbf{I}\right)$$</p>
+<p>The parameters $\beta_t \ll 1$ for $t=1,2,…,T$ govern the core diffusion process. Usually, we can afford a larger update step when the sample gets noisier, so $\beta_1 &lt; \beta_2 &lt; \dotsb &lt; \beta_T$ and thus $\bar{\alpha}_1 &lt; \bar{\alpha}_2 &lt; \dotsb &lt; \bar{\alpha}_T$.</p>
+<ul>
+<li>
+<p>An interesting way to look at the Flow of Distribution</p>
+<p>In the two extremes of this flow, we get:</p>
+<ul>
+<li>$x_0 \sim q(x)$, the data PDF</li>
+<li>$x_T \sim \mathcal{N}(0, \mathbf{I})$</li>
+</ul>
+<p>In between the distribution varies smoothly as a convolution between a dilated version of data PDF and an isotropic Gaussian. The intermediate PDF are a convolution of p(x) with shifted Gaussians of growing width.</p>
+</li>
+</ul>
+<p>$$q(x_t) = \int q(x_t, x_0) dx_0 = \int q(x_t | x_0) q(x_0) dx_0$$</p>
+<h3 id="reverse-diffusion">Reverse diffusion</h3>
+<p>Writing $q({x}_t\|{x}_{t-1})$ is easy, how about the reverse diffusion, $q({x}_{t-1}\|{x}_{t})$?</p>
+<ul>
+<li>
+<p>Why do we need $q({x}_{t-1}\|{x}_{t})$?</p>
+<p>With $q({x}_{t-1}\|{x}_{t})$, we can genarate samples through iterative steps:</p>
+<ul>
+<li>Draw: $x_T \sim \mathcal{N}(0, I)$</li>
+<li>Update iteratively by drawing ${x}_{t-1}$ randomly from $q({x}_{t-1}\|x_t)$</li>
+<li>$x_0$ would be the new sample</li>
+</ul>
+</li>
+</ul>
+<p>A direct method that comes to our mind to compute $q({x}_{t-1}\|{x}_{t})$ is Bayes:</p>
+<p>$$q(x_{t-1}\|x_{t})=\frac{q(x_t\|x_{t-1})q(x_{t-1})}{q(x_t)}$$</p>
+<p>However, this leads to a dead end since $q(x_t)$ and $q(x_{t-1})$ are unknown to us ($q(x_t \| x_{t-1})$ is a simple Gaussian). We need to make some assumptions such to make things easier to compute. Assume the diffusion process varies at a slow flowing speed ($\beta_t \ll 1$), we could approximate the learned $p_\theta(x_{t-1}\|x_t)$ as a Gaussian distribution. Note that the notation of PDF switches from $q(x)$ to $p(x)$ to distinguish the forward and backward process.</p>
+<p>$$p_\theta(x_{t-1} \| x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \Sigma_\theta(x_t, t))$$</p>
+<ul>
+<li>Why Gaussianity assumption is exact for $p_\theta(x_{t-1}\|x_t)$?</li>
+</ul>
+<p>Intuitively, the migration in forward process from $x_{t-1}$ to $x_t$ is essentially an addition of slight noise. Therefore, the reverse diffusion from $x_{t}$ to $x_{t-1}$ is merely a slight denoising process. </p>
+<p>A more reasonable explanation by Bayes relation goes:</p>
+<p>$$q(x_{t-1} \| x_{t}) = \frac{q(x_t \| x_{t-1})q(x_{t-1})}{q(x_t)} \propto q(x_t \| x_{t-1})q(x_{t-1})$$</p>
+<p>We know $q(x_t \| x_{t-1})$ is a simple Gaussian (resembles to delta function or needle-like narrow distribution when the variance is small enough), $q(x_{t-1})$ is the data distribution, which is a wide distribution. In this way, $q(x_{t-1} \| x_{t})$ can be approximated as multiplication between a constant $q(x_{t-1})$ and a Gaussian $q(x_t \| x_{t-1})$, which is also a Gaussian.</p>
+<p>So to be clear, by assuming $p_\theta(x_{t-1}\|x_t)$ as a Gaussian distribution. The primary focus turns to make smart choices regarding the identity of $\mu_\theta(x_t, t)$ and $\Sigma_\theta(x_t, t))$. <a href="https://www.youtube.com/watch?v=aPoGqE4oabc&amp;list=PL0H3pMD88m8XPBlWoWGyal45MtnwKLSkQ&amp;index=4">Michael Elad</a> gave an elaborated course on such options, starting from simple one and proceeding to <a href="https://arxiv.org/pdf/2006.11239">DDPM</a>. Below we summary the core idea behind all five options. Skip this for DDPM if not interested.</p>
+<h4 id="five-options-to-learn-mathplaceholder81end">Five options to learn $q(x_{t-1} | x_{t})$</h4>
+<ol>
+<li>Option 1
+Gather many (M) triplets $\{t, x_{t-1}, x_t\}$
+Train two neural network one for $\mu_\theta(x_t, t)$, another for $\Sigma_\theta(x_t, t))$
+How to train? Use Maximum Likelihood</li>
+</ol>
+<p>$$
+\begin{align*}  
+\max_\theta \prod_k p_\theta(x^k_{t-1} \| x^k_t) &amp;= \max_\theta \sum_k \log p_\theta(x^k_{t-1} \| x^k_t) \\  &amp;= \min_\theta \sum_k \left[ \left((x^k_{t-1} - \mu_\theta(x^k_t, t))^\top \Sigma^{-1}_\theta(x^k_t, t)(x^k_{t-1} - \mu_\theta(x^k_t, t)) - \log\det\left(\Sigma^{-1}_\theta(x^k_t, t)\right.\right. . \right.  
+\end{align*}
+$$</p>
+<p>In practice, we choose a much simpler form for $\Sigma_\theta(x_t, t))=\sigma_t^2 \mathbf{I}$ (this assumes same Gaussian noise for every pixel). The updated loss becomes:</p>
+<p>$$\min_{\sigma^2_t,\theta} \sum_{k=1}^M \left[\frac{1}{\sigma^2_t} \|x^k_{t-1} - \mu_\theta(x^k_t, t)\|^2_2 - N \cdot \log\left(\frac{1}{\sigma^2_t}\right)\right]$$</p>
+<p>The training loss for $\mu_\theta(x_t, t)$ is nothing but a denoiser which inputs $x_t$ and outputs a slightly-denoising one closest to $x_{t-1}$. $\Sigma_\theta(x_t, t))$ can be computed when taking the derivative with respect to $\sigma^2$. This gives $\sigma^2 = \frac{1}{NM}\sum_{k=1}^M \left[\frac{1}{\sigma^2_t} \|x^k_{t-1} - \mu_\theta(x^k_t, t)\|^2_2 \right]$, which is the mean square error per pixel and determines how good is your denoiser.</p>
+<p>The problem with option 1 is that to denoise a small fraction of noise is less effective.</p>
+<ol start="2">
+<li>Option 2
+Gather many (M) triplets $\{t, x_{t-1}, x_t, x_0 \}$
+Train a denoiser $\mathbf{D}_\theta(x_t, t)$ that aims to estimate $x_0$ form $x_t$
+Define $\mu_\theta(x_t, t)=A_t \cdot x_t +(1-A_t)\mathbf{D_\theta}(x_t,t)$ for $0 \leq A_t \leq 1$ ( $x_{t-1}$ must be in-between $x_0$ and $x_t$)
+The rationale behind the above definition is that we must make sure the estimated $\mu_\theta(x_t, t)$ is closest to $x_{t-1}$. How to guarantee this?
+Train it by solving a Least Square problem:</li>
+</ol>
+<p>$$\min_{A_t} \sum_{k=1}^M \left\| A_t \cdot x^k_t + (1-A_t) D_\theta(x^k_t, t) - x^k_{t-1} \right\|^2_2$$</p>
+<p>Choose $A_t$ such to align $\mu_\theta(x_t, t)$ with $x_{t-1}$ in the noise level</p>
+<p>$$x_{t-1}= \sqrt{\bar{\alpha}_{t-1}} \mathbf{x}_0 + \sqrt{1-\bar{\alpha}_{t-1}} \epsilon_{t-1}$$</p>
+<p>$$
+\begin{align*}
+\mu_\theta(x_t, t) &amp;= A_t \cdot x_t + (1 - A_t)\hat{x}_0 \\
+&amp;= A_t(\sqrt{\bar{\alpha}_t}\mathbf{x}_0 + \sqrt{1-\bar{\alpha}_t}\boldsymbol{\epsilon}_t)
++(1-A_t)\hat{x}_0
+\end{align*}
+$$</p>
+<p>By aligning the $\mu_\theta(x_t, t)$ to $x_{t-1}$ in the noise level, we set $A_t=\frac{\sqrt{1-\bar{\alpha}_{t-1}} }{\sqrt{1-\bar{\alpha}_{t}}}$. Thus,</p>
+<p>$$\mu_\theta(x_t, t) =\frac{\sqrt{1-\bar{\alpha}_{t-1}} }{\sqrt{1-\bar{\alpha}_{t}} }(x_t-D_\theta(x_t, t))+D_\theta(x_t, t)$$</p>
+<p>For $\sigma_t$: Assume $\mathbf{D}_\theta(x_t, t)=x_0$ and thus $\mu_\theta(x_t,t) = A_t \cdot x_t$ + determistic part. Thus $\sigma_t$ is $A_t$ times the noise STD in $x_t$. Plugging $x_t = \sqrt{1-\beta_t}x_{t-1}+\sqrt{\beta_t}v_t$ into $\mu_\theta(x_t, t) =A_t \cdot x_t +(1-A_t)\mathbf{D_\theta}(x_t,t)$ and replacing $A_t$ with $\frac{\sqrt{1-\bar{\alpha}{t-1}} }{\sqrt{1-\bar{\alpha}{t}} }$ , we obtain $\sigma_t = \frac{\sqrt{1-\bar{\alpha}{t-1}} }{\sqrt{1-\bar{\alpha}{t}} } \sqrt{\beta_t}$.</p>
+<blockquote>
+<p><strong>Note.</strong> Why using $x_t = \sqrt{1-\beta_t}x_{t-1}+\sqrt{\beta_t}v_t$ not others? * because we need to make sure $\mu_\theta(x_t, t)\approx x_{t-1}$ or has the term of $x_{t-1}$ when substituting $x_t$ in $\mu_\theta(x_t, t)$</p>
+</blockquote>
+<ol start="3">
+<li>Option 3   <br />
+Consider the conditional $q(x_{t-1} \| x_{t},x_0)$ since $q(x_{t-1} \| x_{t})$ is difficult to estimate. Meanwhile, $q(x_{t-1} \| x_{t}) = q(x_{t-1} \| x_{t},x_0)$ when assuming Markov process. Using Bayes rule we get：</li>
+</ol>
+<p>$$p_\theta(x_{t-1}|x_{t},x_0) = \frac{q(x_t|x_{t-1},x_0)q(x_{t-1}|x_0)}{q(x_t|x_0)}$$</p>
+<p>All three ingredients in above expression are known Gaussians. And thus $p_\theta(x_{t-1} \| x_{t},x_0)$ is Gaussian with closed-form distribution. We can derive the following expression for $p_\theta(x_{t-1} \| x_{t},x_0)$</p>
+<p>$$p_\theta(x_{t-1}|x_t, x_0) =  \mathcal{N}(x_{t-1}; \frac{\sqrt{\bar{\alpha}_{t-1}}}{1-\bar{\alpha}_t} x_0 + \frac{\sqrt{\alpha_t}(1-\bar{\alpha}_{t-1})}{1-\bar{\alpha}_t}x_t, \frac{1-\bar{\alpha}_{t-1}}{1-\bar{\alpha}_{t}}(1-\alpha_t)\mathbf{I})$$</p>
+<p>Detailed derivation can be found in DDPM. The appearance of$x_0$ can be replaced by $\boldsymbol{\epsilon}_t$ via $x_t =\sqrt{\bar{\alpha}_t} \mathbf{x}_0 + \sqrt{1-\bar{\alpha}_t} \boldsymbol{\epsilon}_t$, which gives a closed form expression:</p>
+<p>$$p_\theta(x_{t-1}|x_t, x_0) = \mathcal{N}(x_{t-1};  \frac{1}{\sqrt{\alpha_t}}(x_t-\frac{1-\alpha_t}{\sqrt{1-\bar{\alpha}_t}}\epsilon_t), \frac{1-\bar{\alpha}_{t-1}}{1-\bar{\alpha}_{t}}(1-\alpha_t)\mathbf{I})$$</p>
+<p>While $\epsilon_t$ is unknown to us, we can estimate it with the help of a denoiser $\mathbf{D}_\theta(x_t, t)$ that gets $x_t$and estimates $\hat{x}_0$ (or $\hat{\boldsymbol{\epsilon}}_t$ ), using $x_t =\sqrt{\bar{\alpha}_t} \mathbf{x}_0 + \sqrt{1-\bar{\alpha}_t} \boldsymbol{\epsilon}_t$ gives</p>
+<p>$$\hat{\epsilon}_t = \frac{1}{\sqrt{1-\bar{\alpha}_t}} [x_t - \sqrt{\bar{\alpha}_t} \hat{x}_0] = \frac{1}{\sqrt{1-\bar{\alpha}_t}} [x_t - \sqrt{\bar{\alpha}_t} \mathbf{D}_\theta(x_t, t)]$$</p>
+<p>Plug this into the above Gaussian and get the $p_\theta(x_{t-1} \| x_{t},x_0)$  </p>
+<ol start="4">
+<li>Option 4
+Consider the conditional $p_\theta(x_{t-1} \| x_{t},x_0)$ to represent $p_\theta(x_{t-1} \| x_{t})$ is not exact for non-Markov process. Therefore, let’s marginalize the $p_\theta(x_{t-1} \| x_{t},x_0)$ to compute $p_\theta(x_{t-1} \| x_{t})$</li>
+</ol>
+<p>$$p_\theta(x_{t-1}|x_{t},x_0) = p_\theta(x_{t-1}|x_{t},\epsilon_t)$$</p>
+<p>$$p_\theta(x_{t-1}|x_t) = \int p_\theta(x_{t-1}|x_t, \epsilon_t) q(\epsilon_t|x_t) d\epsilon_t$$</p>
+<p>We know $p_\theta(x_{t-1} \| x_t, \epsilon_t)$ is known Gaussian. $q(\epsilon_t \| x_t)$ is usually modelled as delta (in option 3). So what is $q(\epsilon_t \| x_t)$ exactly? We approximate it as a Gaussian of this form:</p>
+<p>$$q(\epsilon_t \| x_t) = \mathcal{N}(\epsilon_t; \frac{1}{\sqrt{1-\bar{\alpha}_t}} [x_t - \sqrt{\bar{\alpha}_t} \mathbf{D}_\theta(x_t, t)], s^2_t \mathbf{I})$$</p>
+<p>Then we can compute $p_\theta(x_{t-1}|x_{t})$, its mean and variance (We will not dive into this part since I don’t fully understand it!)</p>
+<ol start="5">
+<li>Option 5
+DDPM： as explained in following content.</li>
+</ol>
+<p>It is noteworthy that $p_\theta(x_{t-1}\|x_t)$ is hard to compute but the conditional probability is tractable when conditioned on $x_0$:</p>
+<p>$$\begin{align*} p_\theta(x_{t-1}|x_{t},x_0) &amp;= \frac{q(x_t|x_{t-1},x_0)q(x_{t-1}\|x_0)}{q(x_t|x_0)} \\
+&amp;\propto \exp(-\frac{1}{2} \frac{(x_t - \sqrt{\alpha_t} x_{t-1})^2}{\beta_t}+\frac{(x_{t-1} - \sqrt{\bar{\alpha}_{t-1}} x_0)^2}{1-\bar{\alpha}_{t-1}}+ \frac{(x_t - \sqrt{\bar{\alpha}_{t}} x_0)^2}{1-\bar{\alpha}_{t}} ) \\
+&amp;=\exp(-\frac{1}{2} \frac{x_t^2 - 2\sqrt{\alpha_t} x_t x_{t-1} + \alpha_t x_{t-1}^2}{\beta_t} +  
+\frac{x_{t-1}^2 - 2\sqrt{\bar{\alpha}_{t-1}} x_0 x_{t-1} + \bar{\alpha}_{t-1} x_0^2}{1-\bar{\alpha}_{t-1}} +  
+\frac{(x_t - \sqrt{\bar{\alpha}_{t}} x_0)^2}{1-\bar{\alpha}_{t}})\\
+&amp;= \exp(-\frac{1}{2} \textcolor{red}{(\frac{\alpha_t}{\beta_t} + \frac{1}{1-\bar\alpha_{t-1}})}x_{t-1}^2 -\textcolor{blue}{(\frac{2\sqrt{\alpha_t}}{\beta_t} x_t + \frac{2\sqrt{\bar{\alpha}_{t-1}}}{1-\bar{\alpha}_{t-1}} x_0)}x_{t-1} + C(x_t, x_0) )  
+\end{align*}$$</p>
+<p>where $C(x_t, x_0)$ is a function not involving $x_{t-1}$ and thus can be omitted. We can further extract the Gaussian parameter for $\mu_\theta(x_t, t)$:</p>
+<h2 id="training-and-sampling">Training and Sampling</h2>
+<h2 id="score-based-diffusion-model">Score-based Diffusion Model</h2>
+<h2 id="diffusion-model-for-imaging-inverse-problem">Diffusion Model for imaging inverse problem</h2></div><a class="back-link article-end" href="/blogs/thoughts/technical/">← Back to Technical Thoughts</a></article></main>
+<footer class="site-footer"><span>Xiaodong Wang</span><div><a href="mailto:wangxiaodong@westlake.edu.cn">Email</a><a href="https://scholar.google.com/citations?user=2JXMfrcAAAAJ">Scholar</a><a href="https://github.com/xiaodongwo">GitHub</a></div></footer>
+</body></html>
