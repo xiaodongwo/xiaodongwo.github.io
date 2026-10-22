@@ -1,0 +1,62 @@
+[
+  {
+    "id": "performance-01",
+    "title": "Performance 01",
+    "src": "/assets/video/magic/performance-01.mp4",
+    "poster": "/assets/img/magic/performance-01.jpg",
+    "duration_seconds": 26.08,
+    "width": 1280,
+    "height": 720,
+    "has_audio": true
+  },
+  {
+    "id": "performance-02",
+    "title": "Performance 02",
+    "src": "/assets/video/magic/performance-02.mp4",
+    "poster": "/assets/img/magic/performance-02.jpg",
+    "duration_seconds": 38.1,
+    "width": 1280,
+    "height": 720,
+    "has_audio": true
+  },
+  {
+    "id": "performance-03",
+    "title": "Performance 03",
+    "src": "/assets/video/magic/performance-03.mp4",
+    "poster": "/assets/img/magic/performance-03.jpg",
+    "duration_seconds": 133.36,
+    "width": 1280,
+    "height": 720,
+    "has_audio": true
+  },
+  {
+    "id": "performance-04",
+    "title": "Performance 04",
+    "src": "/assets/video/magic/performance-04.mp4",
+    "poster": "/assets/img/magic/performance-04.jpg",
+    "duration_seconds": 49.48,
+    "width": 1280,
+    "height": 720,
+    "has_audio": true
+  },
+  {
+    "id": "performance-05",
+    "title": "Performance 05",
+    "src": "/assets/video/magic/performance-05.mp4",
+    "poster": "/assets/img/magic/performance-05.jpg",
+    "duration_seconds": 27.35,
+    "width": 1080,
+    "height": 1904,
+    "has_audio": false
+  },
+  {
+    "id": "performance-06",
+    "title": "Performance 06",
+    "src": "/assets/video/magic/performance-06.mp4",
+    "poster": "/assets/img/magic/performance-06.jpg",
+    "duration_seconds": 27.77,
+    "width": 360,
+    "height": 640,
+    "has_audio": false
+  }
+]

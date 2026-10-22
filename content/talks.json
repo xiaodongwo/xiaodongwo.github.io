@@ -1,0 +1,37 @@
+[
+  {
+    "date": "2025-11",
+    "title": "Spectral Compressive Imaging via Chromaticity-Intensity Decomposition",
+    "event": "AI TIME NeurIPS 2025 Pre-talk Series · Online",
+    "kind": "Research talk",
+    "links": {
+      "Bilibili talk": "https://www.bilibili.com/video/BV1yEU6BGEjr/",
+      "SPIE talk": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14033/1403308/Snapshot-spectral-compressive-imaging-via-spectral-reflectance-decomposition/10.1117/12.3093435.full"
+    }
+  },
+  {
+    "date": "2025-11",
+    "title": "Progress in Single-shot Compressive Imaging",
+    "event": "The 3rd Advanced Photonics Forum: Intelligent Photonics · Foshan, China",
+    "kind": "Invited talk",
+    "links": {}
+  },
+  {
+    "date": "2025-09",
+    "title": "Plug-and-play Diffusion Models for Image Compressive Sensing with Data Consistency Projection",
+    "event": "The 15th National Conference on Quantum Imaging · Hangzhou, China",
+    "kind": "Poster presentation",
+    "links": {
+      "ICIP talk": "/assets/video/ICIP2025_XiaodongWang_Video.mp4"
+    }
+  },
+  {
+    "date": "2024-01",
+    "title": "Snapshot Compressive Microscopy Enables Wide-field and High-resolution In-situ Monitoring of Ultrafast Laser Processing",
+    "event": "The 1st International Conference on Ultrafast Science and Quantum Sensing · Sanya, China",
+    "kind": "Oral presentation",
+    "links": {
+      "Optica talk": "/assets/video/video2054098999_XiaodongWang.mp4"
+    }
+  }
+]

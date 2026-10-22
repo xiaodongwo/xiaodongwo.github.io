@@ -1,0 +1,63 @@
+{
+  "name": "Xiaodong Wang",
+  "name_zh": "王晓东",
+  "email": "wangxiaodong@westlake.edu.cn",
+  "scholar": "https://scholar.google.com/citations?user=2JXMfrcAAAAJ",
+  "github": "https://github.com/xiaodongwo",
+  "researchgate": "https://www.researchgate.net/profile/Xiaodong-Wang-77",
+  "linkedin": "https://www.linkedin.com/in/xiaodong-wang-582999330",
+  "x": "https://x.com/tommywang5945",
+  "cv": "/assets/pdf/CV_Xiaodong_Wang_Academic.pdf",
+  "photo": "/assets/img/portrait.jpg",
+  "intro": "I am a joint Ph.D. student in the [Sensing and Computational Imaging Lab](https://xyvirtualgroup.github.io/) at [Zhejiang University](https://www.zju.edu.cn/english/) and [Westlake University](https://en.westlake.edu.cn/), advised by [Prof. Xin Yuan](https://xyvirtualgroup.github.io/). My research interests lie at the intersection of computational photography, computer vision, and physics-based imaging.",
+  "background": "Previously, I obtained my master’s degree at [Southern University of Science and Technology](https://www.sustech.edu.cn/en/), advised by [Prof. Changfeng Wu](http://wulab.bme.sustech.edu.cn/). I received my bachelor’s degree in Optical Engineering from [Changchun University of Science and Technology](https://www.cust.edu.cn/).",
+  "opportunities": "I am looking for research-oriented positions in industry and academia.",
+  "research": "I design novel cameras and imaging systems that bridge computational imaging and optics, with an emphasis on physics-informed vision systems and imaging inverse problems. My background spans computer vision, biomedical engineering, and optical engineering.",
+  "education": [
+    {
+      "dates": "Sep 2022 – Dec 2026 (expected)",
+      "school": "Zhejiang University / Westlake University",
+      "degree": "Ph.D. in Computer Science and Technology · Joint program",
+      "detail": "Advisor: Prof. Xin Yuan"
+    },
+    {
+      "dates": "Sep 2019 – Jul 2022",
+      "school": "Southern University of Science and Technology",
+      "degree": "M.S. in Biomedical Engineering",
+      "detail": "Advisor: Prof. Changfeng Wu"
+    },
+    {
+      "dates": "Sep 2015 – Jul 2019",
+      "school": "Changchun University of Science and Technology",
+      "degree": "B.E. in Optical Engineering",
+      "detail": "International Elite Class"
+    }
+  ],
+  "awards": [
+    {
+      "year": "2026",
+      "text": "Fumio Okano Best Paper Award, Three-Dimensional Imaging, Visualization, and Display, SPIE."
+    },
+    {
+      "year": "2025",
+      "text": "Bode Scholarship / ByteDance Scholarship."
+    },
+    {
+      "year": "2016–2018",
+      "text": "National English Competition for College Students, Second Prize (2016, 2017, 2018)."
+    }
+  ],
+  "reviewing": "NeurIPS; ECCV; ICIP; IEEE Transactions on Computational Imaging; Chinese Optics Letters.",
+  "teaching": [
+    {
+      "dates": "2020–2021",
+      "text": "Teaching Assistant, Medical Image Processing. Instructor: Prof. Yiming Li."
+    },
+    {
+      "dates": "2021",
+      "text": "Teaching Assistant, Biomedical Photonics. Instructor: Prof. Changfeng Wu."
+    }
+  ],
+  "skills": "Python, PyTorch, MATLAB, LaTeX, optical instrumentation.",
+  "languages": "English (IELTS 6.5), Mandarin, Hakka, Cantonese."
+}

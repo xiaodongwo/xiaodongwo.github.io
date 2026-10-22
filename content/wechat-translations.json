@@ -1,0 +1,55 @@
+{
+  "account": "计算成像工坊",
+  "status": "all_four_translated_in_three_local_posts",
+  "translation_guidance": "Preserve the author's meaning, first-person voice, feelings, and degree of certainty. Use natural English and only add transitions needed for clarity. Do not invent details or embellish the prose.",
+  "articles": [
+    {
+      "url": "https://mp.weixin.qq.com/s/SyNSKZOyT4dC6p52H3HH_w",
+      "topic": "Technical Thoughts",
+      "status": "translated_in_local_preview",
+      "original_title": "人机共存时代下的视觉：计算成像",
+      "source": "Full text supplied by the user in chat",
+      "post": "computational-imaging-human-machine-era.md",
+      "omissions": ["Account introduction omitted at the user's explicit request", "Image placeholders omitted; no image files were supplied"],
+      "publication_date": "2025-02-05"
+    },
+    {
+      "url": "https://mp.weixin.qq.com/s/FrVFSvClM1ABITCwieR9PA",
+      "topic": "Life Thoughts",
+      "status": "translated_in_local_preview",
+      "original_title": "一个笨蛋的读博之旅",
+      "source": "Full text supplied by the user in chat; original link confirmed separately",
+      "post": "a-fools-phd-journey.md",
+      "publication_date": "2026-09-03",
+      "publication_time": "02:57",
+      "timezone": "Asia/Shanghai",
+      "formatting": "Preserved all ten body paragraphs, quoted phrases, title emphasis and italic publication date/time. No body bold spans were present in the pasted text, so none were invented. The repeated account name in the WeChat header is displayed once."
+    },
+    {
+      "url": "https://mp.weixin.qq.com/s/eCkXdR1Ar0soYVy0XStUcw",
+      "topic": "Life Thoughts",
+      "status": "translated_in_local_preview",
+      "original_title": "读博收获 |：看见自己，读懂别人",
+      "source": "Full text supplied by the user in chat; original link confirmed separately",
+      "post": "what-my-phd-taught-me.md",
+      "section": "seeing-myself-understanding-others",
+      "publication_date": "2026-09-24",
+      "publication_time": "21:11",
+      "timezone": "Asia/Shanghai",
+      "formatting": "Preserved short paragraphs, the emphasized central sentence, quotation, headings, italic timestamp, and divider. Combined with the fourth article at the user's request."
+    },
+    {
+      "url": "https://mp.weixin.qq.com/s/WjfDi7KmxFIjMT6Efdar_w",
+      "topic": "Life Thoughts",
+      "status": "translated_in_local_preview",
+      "original_title": "读博收获 II：永远不要自怜",
+      "source": "Full text supplied by the user in chat; original link confirmed separately",
+      "post": "what-my-phd-taught-me.md",
+      "section": "never-feel-sorry-for-yourself",
+      "publication_date": "2026-09-25",
+      "publication_time": "03:57",
+      "timezone": "Asia/Shanghai",
+      "formatting": "Preserved paragraph breaks, quoted phrases, headings and italic timestamp. Kept the original ending without adding a conclusion. Combined with the third article at the user's request."
+    }
+  ]
+}

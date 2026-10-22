@@ -1,0 +1,692 @@
+[
+  {
+    "id": "wang2025spectral",
+    "title": "Spectral Compressive Imaging via Chromaticity-Intensity Decomposition",
+    "year": 2025,
+    "authors": [
+      "Xiaodong Wang",
+      "Zijun He",
+      "Ping Wang",
+      "Lishun Wang",
+      "Yanan Hu",
+      "Xin Yuan"
+    ],
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+    "abbr": "NeurIPS",
+    "type": "Conference",
+    "selected": true,
+    "note": "",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2509.16690"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": true
+  },
+  {
+    "id": "wang2025progressive",
+    "title": "Progressive Flow-inspired Unfolding for Spectral Compressive Imaging",
+    "year": 2025,
+    "authors": [
+      "Xiaodong Wang",
+      "Ping Wang",
+      "Zijun He",
+      "Mengjie Qin",
+      "Xin Yuan"
+    ],
+    "venue": "arXiv preprint",
+    "abbr": "arXiv",
+    "type": "Preprint",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2509.12079"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "wang2025texture",
+    "title": "Texture-aware Intrinsic Image Decomposition with Model- and Learning-based Priors",
+    "year": 2025,
+    "authors": [
+      "Xiaodong Wang",
+      "Zijun He",
+      "Xin Yuan"
+    ],
+    "venue": "IEEE International Conference on Multimedia and Expo (ICME)",
+    "abbr": "ICME",
+    "type": "Conference",
+    "selected": true,
+    "note": "",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2509.09352",
+      "code": "https://github.com/xiaodongwo/Efficient_IID",
+      "poster": "/assets/pdf/1272_poster_V3.pdf"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": true
+  },
+  {
+    "id": "wang2025plug",
+    "title": "Plug-and-play Diffusion Models for Image Compressive Sensing with Data Consistency Projection",
+    "year": 2025,
+    "authors": [
+      "Xiaodong Wang*",
+      "Ping Wang*",
+      "Zhangyuan Li",
+      "Xin Yuan"
+    ],
+    "venue": "IEEE International Conference on Image Processing Workshop (ICIP Workshop)",
+    "abbr": "ICIP Workshop",
+    "type": "Conference",
+    "selected": true,
+    "note": "* Equal contribution",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2509.09365",
+      "poster": "/assets/pdf/ICIP2025_XiaodongWang_Poster.pdf",
+      "slides": "/assets/pdf/ICIP2025_XiaodongWang_Slides.pdf",
+      "video": "/assets/video/ICIP2025_XiaodongWang_Video.mp4"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": true
+  },
+  {
+    "id": "hu2025plug",
+    "title": "Lighten-MST: Low-light Spectral Reconstruction via Illumination-guided Spectral-aware Transformer",
+    "year": 2025,
+    "authors": [
+      "Yanan Hu",
+      "Xiaodong Wang",
+      "Zijun He",
+      "Xin Yuan"
+    ],
+    "venue": "International Conference on Computer Vision (ICCV) Workshop",
+    "abbr": "ICCV Workshop",
+    "type": "Conference",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content/ICCV2025W/Responsible-Imaging/papers/Hu_Lighten-MST_Low-light_Spectral_Reconstruction_via_Illumination-guided_Spectral-aware_Transformer_ICCVW_2025_paper.pdf"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "wang2025user",
+    "title": "User Manual for Model-based Imaging Inverse Problem",
+    "year": 2025,
+    "authors": [
+      "Xiaodong Wang"
+    ],
+    "venue": "arXiv preprint",
+    "abbr": "arXiv",
+    "type": "Preprint",
+    "selected": true,
+    "note": "",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2509.01572"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": true
+  },
+  {
+    "id": "liu2020fluorescent",
+    "title": "Fluorescent Bioconjugates for Super-resolution Optical Nanoscopy",
+    "year": 2020,
+    "authors": [
+      "Zhihe Liu",
+      "Jie Liu",
+      "Xiaodong Wang",
+      "Feixue Mi",
+      "Dan Wang",
+      "Changfeng Wu"
+    ],
+    "venue": "Bioconjugate chemistry",
+    "abbr": "Bioconjugate Chem",
+    "type": "Journal",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://pubs.acs.org/doi/10.1021/acs.bioconjchem.0c00320"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "wang2022optical",
+    "title": "Optical Coherence Tomography—In situ and High-speed 3D Imaging for Laser Materials Processing",
+    "year": 2022,
+    "authors": [
+      "Xiaodong Wang",
+      "Xin Yuan",
+      "Liping Shi"
+    ],
+    "venue": "Light: Science & Applications (News & Views)",
+    "abbr": "Light Sci. Appl",
+    "type": "Journal",
+    "selected": true,
+    "note": "",
+    "links": {
+      "pdf": "/assets/pdf/LSA_2022.pdf"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "dou2023coded",
+    "title": "Coded Aperture Temporal Compressive Digital Holographic Microscopy",
+    "year": 2023,
+    "authors": [
+      "Yufei Dou",
+      "Miao Cao",
+      "Xiaodong Wang",
+      "Xing Liu",
+      "Xin Yuan"
+    ],
+    "venue": "Optics Letters",
+    "abbr": "Optics Letters",
+    "type": "Journal",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://opg.optica.org/ol/fulltext.cfm?uri=ol-48-20-5427"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "wang2022research",
+    "title": "Research on Focusing and Deconvolution Imaging Algorithms through Scattering Media (Chinese)",
+    "year": 2022,
+    "authors": [
+      "Xiaodong Wang"
+    ],
+    "venue": "M.S. thesis (in Chinese), Southern University of Science and Technology",
+    "abbr": "Master Thesis",
+    "type": "Thesis",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "/assets/pdf/14325_080900_11930406_LW.pdf",
+      "slides": "/assets/pdf/Xiaodong Wang-硕士答辩-20220511.pdf"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "wang2023spectra",
+    "title": "Spectra-separated Depth-of-field Extended Fluorescence Imaging Through Scattering Media Using Speckle Deconvolution",
+    "year": 2023,
+    "authors": [
+      "Xiaodong Wang",
+      "Dayan Li",
+      "Zhihe Liu",
+      "Xiaofeng Fang",
+      "Jiani Li",
+      "Tianyue Shi",
+      "Changfeng Wu"
+    ],
+    "venue": "Optics and Lasers in Engineering",
+    "abbr": "Opt Laser Eng",
+    "type": "Journal",
+    "selected": true,
+    "note": "",
+    "links": {
+      "pdf": "https://www.sciencedirect.com/science/article/pii/S0143816622004432"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "yao2023photoswitchable",
+    "title": "Photoswitchable Semiconducting Polymer Dots for Pattern Encoding and Superresolution Imaging",
+    "year": 2023,
+    "authors": [
+      "Zihan Yao*",
+      "Xiaodong Wang*",
+      "Jie Liu",
+      "Siyu Zhou",
+      "Zhe Zhang",
+      "Shuwen He",
+      "Jing Liu",
+      "Changfeng Wu",
+      "Xiaofeng Fang"
+    ],
+    "venue": "Chemical Communications",
+    "abbr": "Chem. Commun",
+    "type": "Journal",
+    "selected": true,
+    "note": "* Equal contribution",
+    "links": {
+      "pdf": "https://pubs.rsc.org/en/content/articlelanding/2023/cc/d2cc06707b"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "liu2022near",
+    "title": "Near-infrared Optical Transducer for Dynamic Imaging of Cerebrospinal Fluid Glucose in Brain Tumor",
+    "year": 2022,
+    "authors": [
+      "Siyang Liu",
+      "Ye Liu",
+      "Zhe Zhang",
+      "Xiaodong Wang",
+      "Yicheng Yang",
+      "Kai Sun",
+      "Jiangbo Yu",
+      "Daniel T Chiu",
+      "Changfeng Wu"
+    ],
+    "venue": "Analytical Chemistry",
+    "abbr": "Anal. Chem",
+    "type": "Journal",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://pubs.acs.org/doi/10.1021/acs.analchem.2c02600"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "wang2024situ",
+    "title": "In-situ Real-time Monitoring of Ultrafast Laser Processing Using Wide-field High-resolution Snapshot Compressive Microscopy",
+    "year": 2024,
+    "authors": [
+      "Xiaodong Wang",
+      "Miao Cao",
+      "Ziyang Chen",
+      "Jiao Geng",
+      "Ting Luo",
+      "Yufei Dou",
+      "Xing Liu",
+      "Liping Shi",
+      "Xin Yuan"
+    ],
+    "venue": "Light: Advanced Manufacturing",
+    "abbr": "LAM",
+    "type": "Journal",
+    "selected": true,
+    "note": "",
+    "links": {
+      "pdf": "https://www.light-am.com/article/doi/10.37188/lam.2024.029"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": true
+  },
+  {
+    "id": "si2025new",
+    "title": "A New Hyperspectral Reconstruction Method with Conditional Diffusion Model for Snapshot Spectral Compressive Imaging",
+    "year": 2025,
+    "authors": [
+      "Yifan Si",
+      "Zijian Lin",
+      "Xiaodong Wang",
+      "Sailing He"
+    ],
+    "venue": "IEEE Transactions on Instrumentation and Measurement",
+    "abbr": "IEEE TIM",
+    "type": "Journal",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://ieeexplore.ieee.org/document/10926529"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "li2024scinerf",
+    "title": "SCINeRF: Neural Radiance Fields from A Snapshot Compressive Image",
+    "year": 2024,
+    "authors": [
+      "Yunhao Li",
+      "Xiaodong Wang",
+      "Ping Wang",
+      "Xin Yuan",
+      "Peidong Liu"
+    ],
+    "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Highlight",
+    "abbr": "CVPR",
+    "type": "Conference",
+    "selected": true,
+    "note": "Highlight paper",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2024/papers/Li_SCINeRF_Neural_Radiance_Fields_from_a_Snapshot_Compressive_Image_CVPR_2024_paper.pdf",
+      "code": "https://github.com/WU-CVGL/SCINeRF"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": true
+  },
+  {
+    "id": "wang2025proximal",
+    "title": "Proximal Algorithm Unrolling: Flexible and Efficient Reconstruction Networks for Single-Pixel Imaging",
+    "year": 2025,
+    "authors": [
+      "Ping Wang",
+      "Lishun Wang",
+      "Gang Qu",
+      "Xiaodong Wang",
+      "Yulun Zhang",
+      "Xin Yuan"
+    ],
+    "venue": "Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)",
+    "abbr": "CVPR",
+    "type": "Conference",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_Proximal_Algorithm_Unrolling_Flexible_and_Efficient_Reconstruction_Networks_for_Single-Pixel_CVPR_2025_paper.pdf",
+      "code": "https://github.com/pwangcs/ProxUnroll"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "si2025asp",
+    "title": "ASP-Model: An Advanced Deep Learning Framework to Reconstruct Hyperspectral Cubes for Computed Tomography Imaging System",
+    "year": 2025,
+    "authors": [
+      "Yifan Si",
+      "Shuo Li",
+      "Xiaodong Wang",
+      "Sailing He"
+    ],
+    "venue": "IEEE Transactions on Instrumentation and Measurement",
+    "abbr": "IEEE TIM",
+    "type": "Journal",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://ieeexplore.ieee.org/document/10891566"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "chen2025lctc",
+    "title": "LCTC: Lightweight Convolutional Thresholding Sparse Coding Network Prior for Compressive Hyperspectral Imaging",
+    "year": 2025,
+    "authors": [
+      "Yurong Chen",
+      "Yaonan Wang",
+      "Xiaodong Wang",
+      "Xin Yuan",
+      "Hui Zhang"
+    ],
+    "venue": "IEEE Transactions on Image Processing",
+    "abbr": "IEEE TIP",
+    "type": "Journal",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://ieeexplore.ieee.org/document/11069304"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "li2025sci",
+    "title": "SCI-Gaussian: Optimizing 3D Gaussian Radiance Fields from a Snapshot Compressive Image",
+    "year": 2025,
+    "authors": [
+      "Xiaoyue Li",
+      "Yunhao Li",
+      "Xiaodong Wang",
+      "Xin Yuan",
+      "Mark D Butala",
+      "Gaoang Wang"
+    ],
+    "venue": "ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+    "abbr": "ICASSP",
+    "type": "Conference",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://ieeexplore.ieee.org/abstract/document/10888808"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "li2024learning",
+    "title": "Learning Radiance Fields from a Single Snapshot Compressive Image",
+    "year": 2024,
+    "authors": [
+      "Yunhao Li",
+      "Xiang Liu",
+      "Xiaodong Wang",
+      "Xin Yuan",
+      "Peidong Liu"
+    ],
+    "venue": "arXiv preprint",
+    "abbr": "arXiv",
+    "type": "Preprint",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2412.19483"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "wang2023wide",
+    "title": "Wide-field, High-resolution Snapshot Compressive Microscopy for Laser Materials Manufacturing",
+    "year": 2023,
+    "authors": [
+      "Xiaodong Wang",
+      "Miao Cao",
+      "Liping Shi",
+      "Jiao Geng",
+      "Xin Yuan"
+    ],
+    "venue": "Imaging Systems and Applications",
+    "abbr": "COSI",
+    "type": "Conference",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "/assets/pdf/3d-2023-jw2a.9.pdf",
+      "poster": "/assets/pdf/COSI_2023_poster_XiaodongWang.pdf",
+      "video": "/assets/video/video2054098999_XiaodongWang.mp4"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "qu2023plug",
+    "title": "Plug-and-Play Deep Image Prior for Snapshot Optical Coherence Tomography",
+    "year": 2023,
+    "authors": [
+      "Gang Qu",
+      "Xiaodong Wang",
+      "Xin Yuan"
+    ],
+    "venue": "Propagation Through and Characterization of Atmospheric and Oceanic Phenomena",
+    "abbr": "COSI",
+    "type": "Conference",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "/assets/pdf/cosi-2023-jw2a.10.pdf",
+      "poster": "/assets/pdf/Poster_GangQu_CSOCT.pdf",
+      "video": "/assets/video/video_XiaodongWang.mp4"
+    },
+    "source": "Original repository: _bibliography/papers.bib",
+    "home_selected": false
+  },
+  {
+    "id": "wang2026dualpixel",
+    "title": "Learning to Disentangle Dispersion and Disparity: A Dual-Pixel CASSI Approach for Joint Spectral-Depth Imaging",
+    "authors": [
+      "Xiaodong Wang",
+      "Siming Zheng",
+      "Xin Yuan"
+    ],
+    "year": 2026,
+    "venue": "International Conference on Neural Information Processing (ICONIP)",
+    "abbr": "ICONIP",
+    "type": "Conference",
+    "selected": false,
+    "note": "Accepted · Oral presentation",
+    "links": {},
+    "source": "User-supplied academic CV",
+    "home_selected": true
+  },
+  {
+    "id": "wang2026generalization",
+    "title": "Less Spectral Data, More Degradations: Rethinking Generalization Problem in CASSI Reconstruction",
+    "authors": [
+      "Xiaodong Wang",
+      "Yifan Si",
+      "Xin Yuan"
+    ],
+    "year": 2026,
+    "venue": "Asian Conference on Computer Vision (ACCV)",
+    "abbr": "ACCV",
+    "type": "Conference",
+    "selected": false,
+    "note": "Accepted",
+    "links": {},
+    "source": "User-supplied academic CV",
+    "home_selected": true
+  },
+  {
+    "id": "yuan2026reflectance",
+    "title": "Snapshot Spectral Compressive Imaging via Spectral Reflectance Decomposition",
+    "authors": [
+      "Xin Yuan",
+      "Xiaodong Wang"
+    ],
+    "year": 2026,
+    "venue": "Three-Dimensional Imaging, Visualization, and Display, SPIE, Vol. 14033",
+    "abbr": "SPIE",
+    "type": "Conference",
+    "selected": false,
+    "note": "Fumio Okano Best Paper Award",
+    "links": {
+      "pdf": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14033/3093435/Snapshot-spectral-compressive-imaging-via-spectral-reflectance-decomposition/10.1117/12.3093435.full"
+    },
+    "source": "User-supplied academic CV",
+    "home_selected": true
+  },
+  {
+    "id": "tang2026ti3dgs",
+    "title": "TI-3DGS: 3D Thermal Reconstruction via Thermal Imaging-guided 3D Gaussian Splatting",
+    "authors": [
+      "Yong Tang",
+      "Yunhao Li",
+      "Xiaodong Wang",
+      "Qiang Song",
+      "Bing Qin",
+      "Xiaocheng Feng",
+      "Xin Yuan"
+    ],
+    "year": 2026,
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "abbr": "ICRA",
+    "type": "Conference",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://rasevents.org/uploads/documents/pdfviewer/f3/12/223790-0927.pdf"
+    },
+    "source": "User-supplied academic CV",
+    "home_selected": false
+  },
+  {
+    "id": "he2026cooperative",
+    "title": "Joint Spectral Image Reconstruction and Semantic Segmentation with Cooperative Unfolding",
+    "authors": [
+      "Zijun He",
+      "Ping Wang",
+      "Xiaodong Wang",
+      "Chang Chen",
+      "Xin Yuan"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pp. 6910–6919",
+    "abbr": "CVPR",
+    "type": "Conference",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2026/papers/He_Joint_Spectral_Image_Reconstruction_and_Semantic_Segmentation_with_Cooperative_Unfolding_CVPR_2026_paper.pdf"
+    },
+    "source": "User-supplied academic CV",
+    "home_selected": false
+  },
+  {
+    "id": "shi2026pan",
+    "title": "Physically-Coupled PAN-Guided Unfolding for Dual-Camera Compressive Hyperspectral Imaging",
+    "authors": [
+      "Zheyu Shi",
+      "Lishun Wang",
+      "Xiaodong Wang",
+      "Yong Zhong",
+      "Ping Wang",
+      "Xin Yuan"
+    ],
+    "year": 2026,
+    "venue": "ACM International Conference on Multimedia (ACM MM)",
+    "abbr": "ACM MM",
+    "type": "Conference",
+    "selected": false,
+    "note": "Accepted",
+    "links": {},
+    "source": "User-supplied academic CV",
+    "home_selected": false
+  },
+  {
+    "id": "li2026scips",
+    "title": "SCIPS: Single-Shot Photometric Stereo from a Snapshot Compressed Multispectral Image",
+    "authors": [
+      "Yunhao Li",
+      "Yanan Hu",
+      "Xiaodong Wang",
+      "Yuze Yang",
+      "Ziyi Meng",
+      "Xin Yuan",
+      "Peidong Liu"
+    ],
+    "year": 2026,
+    "venue": "IEEE International Conference on Image Processing (ICIP)",
+    "abbr": "ICIP",
+    "type": "Conference",
+    "selected": false,
+    "note": "Accepted",
+    "links": {
+      "pdf": "https://ieeexplore.ieee.org/abstract/document/11630570/"
+    },
+    "source": "User-supplied academic CV",
+    "home_selected": false
+  },
+  {
+    "id": "zhang2025hologram",
+    "title": "Unfolding Framework with Complex-Valued Deformable Attention for High-Quality Computer-Generated Hologram Generation",
+    "authors": [
+      "Haomiao Zhang",
+      "Zhangyuan Li",
+      "Yanling Piao",
+      "Zhi Li",
+      "Xiaodong Wang",
+      "Miao Cao",
+      "Xiongfei Su",
+      "Qiang Song",
+      "Xin Yuan"
+    ],
+    "year": 2025,
+    "venue": "IEEE International Conference on Multimedia and Expo (ICME), pp. 1–6",
+    "abbr": "ICME",
+    "type": "Conference",
+    "selected": false,
+    "note": "",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2508.21657"
+    },
+    "source": "User-supplied academic CV",
+    "home_selected": false
+  }
+]
