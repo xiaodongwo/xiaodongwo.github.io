@@ -41,7 +41,7 @@ def icon(name):
         'cv':'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/>',
         'scholar':'<path d="m2 9 10-5 10 5-10 5-10-5zM6 11v6c4 3 8 3 12 0v-6M22 9v8"/>',
         'researchgate':'<text x="2" y="20" fill="currentColor" stroke="none" font-family="Georgia,serif" font-size="21">R</text><text x="15" y="10" fill="currentColor" stroke="none" font-family="Georgia,serif" font-size="10">G</text>',
-        'github':'<path d="M9 19c-4 1-4-2-6-2m12 5v-4a3.5 3.5 0 0 0-1-2.7c3.3-.4 6.8-1.6 6.8-7.3a5.7 5.7 0 0 0-1.5-4 5.3 5.3 0 0 0-.1-4s-1.3-.4-4.2 1.5a14.3 14.3 0 0 0-7.6 0C4.5-.4 3.2 0 3.2 0a5.3 5.3 0 0 0-.1 4 5.7 5.7 0 0 0-1.5 4c0 5.7 3.5 6.9 6.8 7.3A3.5 3.5 0 0 0 7.5 18v4" transform="translate(2 1) scale(.85)"/>',
+        'linkedin':'<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="7.5" cy="7.5" r="1" fill="currentColor" stroke="none"/><path d="M7.5 11v6M11.5 17v-6m0 3a3 3 0 0 1 6 0v3"/>',
         'email':'<rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 6 9 7 9-7"/>',
         'arrow':'<path d="M5 12h14m-5-5 5 5-5 5"/>',
         'chevron':'<path d="m6 9 6 6 6-6"/>',
@@ -95,8 +95,6 @@ def compact_paper(p):
     venue = p['venue'] if p['type'] == 'Journal' else p['abbr']
     meta = f'<span title="{esc(p["venue"])}">{esc(venue)}</span>'
     if status: meta += f' · {esc(status)}'
-    if p.get('show_home_pdf') and p['links'].get('pdf'):
-        meta += f'<span class="compact-resources">{resources({"PDF": p["links"]["pdf"]})}</span>'
     return f'<li class="timeline-row"><span class="date">{p["year"]}</span><div><div class="compact-title">{paper_title(p)}</div><p class="compact-meta">{meta}</p></div></li>'
 
 def talk_rows():
@@ -112,7 +110,7 @@ def talk_rows():
         rows.append(f'<li class="timeline-row"><time class="date" datetime="{talk["date"]}">{date}</time><div>{title} <span class="talk-resources">{resources(talk["links"])}</span><p class="row-description">{esc(talk["event"])} · {esc(talk["kind"])}</p></div></li>')
     return ''.join(rows)
 
-socials = [('ResearchGate','researchgate',PROFILE['researchgate']),('Scholar','scholar',PROFILE['scholar']),('GitHub','github',PROFILE['github']),('Email','email','mailto:'+PROFILE['email'])]
+socials = [('ResearchGate','researchgate',PROFILE['researchgate']),('Scholar','scholar',PROFILE['scholar']),('LinkedIn','linkedin',PROFILE['linkedin']),('Email','email','mailto:'+PROFILE['email'])]
 social_html = ''.join(f'<a href="{esc(href)}">{icon(i)}<span>{name}</span></a>' for name,i,href in socials)
 home = f'''<section class="profile" aria-labelledby="intro-title">
 <img class="portrait" src="{PROFILE['photo']}" alt="Xiaodong Wang" width="224" height="224" fetchpriority="high">
@@ -132,7 +130,7 @@ def authors_html(authors):
 
 def full_paper(p):
     notes = f' · <span class="paper-note">{esc(p["note"])}</span>' if p['note'] else ''
-    links = {(p.get('pdf_label', 'paper') if k == 'pdf' else k):v for k,v in p['links'].items()}
+    links = {('PDF' if k == 'pdf' else k):v for k,v in p['links'].items()}
     if p['id'] == 'wang2025plug': links['blog']='/blogs/thoughts/diffusion-models/'
     return f'''<li class="publication" id="{p['id']}" data-type="{p['type']}"><h3>{paper_title(p, True)}</h3>
     <p class="authors">{authors_html(p['authors'])}</p><p class="venue">{esc(p['venue'])}, {p['year']}{notes}</p><p class="publication-links">{resources(links)}</p></li>'''

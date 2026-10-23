@@ -535,9 +535,7 @@
       "pdf": "/assets/pdf/ICONIP2026.pdf"
     },
     "source": "User-supplied accepted manuscript and academic CV",
-    "home_selected": true,
-    "pdf_label": "PDF",
-    "show_home_pdf": true
+    "home_selected": true
   },
   {
     "id": "wang2026generalization",
@@ -557,9 +555,7 @@
       "pdf": "/assets/pdf/ACCV2026.pdf"
     },
     "source": "User-supplied accepted manuscript and academic CV",
-    "home_selected": true,
-    "pdf_label": "PDF",
-    "show_home_pdf": true
+    "home_selected": true
   },
   {
     "id": "yuan2026reflectance",
