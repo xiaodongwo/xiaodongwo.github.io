@@ -519,7 +519,7 @@
   },
   {
     "id": "wang2026dualpixel",
-    "title": "Learning to Disentangle Dispersion and Disparity: A Dual-Pixel CASSI Approach for Joint Spectral-Depth Imaging",
+    "title": "Learning to Disentangle Dispersion and Disparity: A Dual-Pixel CASSI for Joint Spectral-Depth Imaging",
     "authors": [
       "Xiaodong Wang",
       "Siming Zheng",
@@ -531,9 +531,13 @@
     "type": "Conference",
     "selected": false,
     "note": "Accepted · Oral presentation",
-    "links": {},
-    "source": "User-supplied academic CV",
-    "home_selected": true
+    "links": {
+      "pdf": "/assets/pdf/ICONIP2026.pdf"
+    },
+    "source": "User-supplied accepted manuscript and academic CV",
+    "home_selected": true,
+    "pdf_label": "PDF",
+    "show_home_pdf": true
   },
   {
     "id": "wang2026generalization",
@@ -549,9 +553,13 @@
     "type": "Conference",
     "selected": false,
     "note": "Accepted",
-    "links": {},
-    "source": "User-supplied academic CV",
-    "home_selected": true
+    "links": {
+      "pdf": "/assets/pdf/ACCV2026.pdf"
+    },
+    "source": "User-supplied accepted manuscript and academic CV",
+    "home_selected": true,
+    "pdf_label": "PDF",
+    "show_home_pdf": true
   },
   {
     "id": "yuan2026reflectance",

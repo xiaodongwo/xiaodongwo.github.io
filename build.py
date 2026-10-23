@@ -95,6 +95,8 @@ def compact_paper(p):
     venue = p['venue'] if p['type'] == 'Journal' else p['abbr']
     meta = f'<span title="{esc(p["venue"])}">{esc(venue)}</span>'
     if status: meta += f' · {esc(status)}'
+    if p.get('show_home_pdf') and p['links'].get('pdf'):
+        meta += f'<span class="compact-resources">{resources({"PDF": p["links"]["pdf"]})}</span>'
     return f'<li class="timeline-row"><span class="date">{p["year"]}</span><div><div class="compact-title">{paper_title(p)}</div><p class="compact-meta">{meta}</p></div></li>'
 
 def talk_rows():
@@ -130,7 +132,7 @@ def authors_html(authors):
 
 def full_paper(p):
     notes = f' · <span class="paper-note">{esc(p["note"])}</span>' if p['note'] else ''
-    links = {('paper' if k == 'pdf' else k):v for k,v in p['links'].items()}
+    links = {(p.get('pdf_label', 'paper') if k == 'pdf' else k):v for k,v in p['links'].items()}
     if p['id'] == 'wang2025plug': links['blog']='/blogs/thoughts/diffusion-models/'
     return f'''<li class="publication" id="{p['id']}" data-type="{p['type']}"><h3>{paper_title(p, True)}</h3>
     <p class="authors">{authors_html(p['authors'])}</p><p class="venue">{esc(p['venue'])}, {p['year']}{notes}</p><p class="publication-links">{resources(links)}</p></li>'''
