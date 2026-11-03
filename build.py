@@ -115,8 +115,7 @@ social_html = ''.join(f'<a href="{esc(href)}">{icon(i)}<span>{name}</span></a>' 
 home = f'''<section class="profile" aria-labelledby="intro-title">
 <img class="portrait" src="{PROFILE['photo']}" alt="Xiaodong Wang" width="224" height="224" fetchpriority="high">
 <div class="profile-text"><h1 id="intro-title">Hello, I'm Xiaodong Wang</h1>
-{md(PROFILE['intro'])}{md(PROFILE['background'])}
-<p class="opportunities">{esc(PROFILE['opportunities'])}</p>
+{md(' '.join(PROFILE[key].strip() for key in ['intro', 'background', 'opportunities'] if PROFILE[key].strip()))}
 <div class="social-links" aria-label="Contact and academic profiles">{social_html}</div></div></section>
 <div class="editorial">
 <section class="home-section" aria-labelledby="papers-heading"><div class="section-heading"><h2 id="papers-heading">Papers</h2><a class="quiet-link" href="/papers/">All papers {icon('arrow')}</a></div>
