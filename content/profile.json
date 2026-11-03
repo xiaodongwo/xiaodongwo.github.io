@@ -10,7 +10,7 @@
   "cv": "/assets/pdf/CV_Xiaodong_Wang_Academic.pdf",
   "photo": "/assets/img/portrait.jpg",
   "intro": "I am a joint Ph.D. student at [Zhejiang University](https://www.zju.edu.cn/english/) and [Westlake University](https://en.westlake.edu.cn/), advised by [Prof. Xin Yuan](https://xyvirtualgroup.github.io/) in the [Sensing and Computational Imaging Lab](https://xyvirtualgroup.github.io/).",
-  "background": "My research focuses on designing novel cameras and imaging algorithms for real-world applications.",
+  "background": "My research focuses on designing novel cameras and imaging algorithms for real-world applications. I work at the intersection of optics, computational imaging, and computer vision, with an emphasis on image reconstruction and restoration.",
   "opportunities": "I am looking for research-oriented positions in industry and academia.",
   "research": "I design novel cameras and imaging systems that bridge computational imaging and optics, with an emphasis on physics-informed vision systems and imaging inverse problems. My background spans computer vision, biomedical engineering, and optical engineering.",
   "education": [
