@@ -170,7 +170,7 @@
       "pdf": "/assets/pdf/LSA_2022.pdf"
     },
     "source": "Original repository: _bibliography/papers.bib",
-    "home_selected": false
+    "home_selected": true
   },
   {
     "id": "dou2023coded",
@@ -235,7 +235,7 @@
       "pdf": "https://www.sciencedirect.com/science/article/pii/S0143816622004432"
     },
     "source": "Original repository: _bibliography/papers.bib",
-    "home_selected": false
+    "home_selected": true
   },
   {
     "id": "yao2023photoswitchable",
@@ -261,7 +261,7 @@
       "pdf": "https://pubs.rsc.org/en/content/articlelanding/2023/cc/d2cc06707b"
     },
     "source": "Original repository: _bibliography/papers.bib",
-    "home_selected": false
+    "home_selected": true
   },
   {
     "id": "liu2022near",
@@ -357,7 +357,7 @@
       "code": "https://github.com/WU-CVGL/SCINeRF"
     },
     "source": "Original repository: _bibliography/papers.bib",
-    "home_selected": true
+    "home_selected": false
   },
   {
     "id": "wang2025proximal",
@@ -530,7 +530,7 @@
     "abbr": "ICONIP",
     "type": "Conference",
     "selected": false,
-    "note": "Accepted · Oral presentation",
+    "note": "Oral presentation",
     "links": {
       "pdf": "/assets/pdf/ICONIP2026.pdf"
     },
@@ -550,7 +550,7 @@
     "abbr": "ACCV",
     "type": "Conference",
     "selected": false,
-    "note": "Accepted",
+    "note": "",
     "links": {
       "pdf": "/assets/pdf/ACCV2026.pdf"
     },
@@ -638,7 +638,7 @@
     "abbr": "ACM MM",
     "type": "Conference",
     "selected": false,
-    "note": "Accepted",
+    "note": "",
     "links": {},
     "source": "User-supplied academic CV",
     "home_selected": false
@@ -660,7 +660,7 @@
     "abbr": "ICIP",
     "type": "Conference",
     "selected": false,
-    "note": "Accepted",
+    "note": "",
     "links": {
       "pdf": "https://ieeexplore.ieee.org/abstract/document/11630570/"
     },
